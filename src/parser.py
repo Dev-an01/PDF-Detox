@@ -120,7 +120,7 @@ def _split_values(glyphs):
 
 def _cell(glyphs, spaces, top, bottom):
     """raw_text = the cell's glyphs plus the space characters that sit between them, in x order."""
-    x0, x1 = glyphs[0]["bbox"][0], glyphs[-1]["bbox"][2]
+    x0, x1 = min(g["bbox"][0] for g in glyphs), max(g["bbox"][2] for g in glyphs)  # OCR word boxes can overlap
     inner = [s for s in spaces if x0 < (s["bbox"][0] + s["bbox"][2]) / 2 < x1
              and top <= (s["bbox"][1] + s["bbox"][3]) / 2 <= bottom]
     chars = sorted(glyphs + inner, key=lambda c: c["bbox"][0])
@@ -452,6 +452,8 @@ def assign_hierarchy(t):
 def stitch(a, b):
     """Append table b (top of the next page) to table a (bottom of this page). b's header rows are
     a repeat and are dropped; every row keeps its own page."""
+    b["_merged_into"] = a
+    a["captions"] = a.get("captions", []) + [dict(c, page=b["regions"][0]["page"]) for c in b.get("captions", [])]
     nh, shift = b["header_rows"], a["n_rows"] - b["header_rows"]
     a["cells"] += [dict(c, row=c["row"] + shift) for c in b["cells"] if c["row"] >= nh]
     a["rows"] += [dict(r, row=r["row"] + shift, parent_row=None if r["parent_row"] is None else r["parent_row"] + shift)
@@ -1084,6 +1086,7 @@ def lighton_tables(page_data, pno):
                                                     and c["col"] <= k < c["col"] + c["col_span"]]} for k in range(g["n_cols"])],
              "rows": [{"row": r, "page": pno} for r in body_rows], "cells": out_cells, "needs_review": False, "issues": [],
              "structure_source": "lighton"}
+        t["_block_bbox"] = b["bbox"]
         if extra:  # conservation for OCR tables: LightOn may have dropped a row or value
             _issue(t, "ocr_numbers_unmatched", count=extra)
         assign_hierarchy(t)
@@ -1138,6 +1141,148 @@ def split_repeated(t):
     return [t]
 
 
+# ---------------------------------------------------------------- page blocks: everything on the page is kept
+HEADING_NUM = [(re.compile(r"^第[0-9０-９一二三四五六七八九十]+[章節部編]"), 1), (re.compile(r"^[0-9０-９]{1,2}[．.](?![0-9０-９])"), 1),
+               (re.compile(r"^[（(][0-9０-９]{1,2}[）)]"), 2), (re.compile(r"^[①-⑳]"), 3)]
+BRACKET_LABEL = re.compile(r"^[（(【\[].{1,14}[）)】\]]$")  # （訂正後） 【連結】
+FOOTNOTE = re.compile(r"^(※|\*\d|\(?注|（注|notes?\b|\(\d\)\s)", re.I)
+CAPTION_CHAIN = 6  # at most this many lines stacked directly above a table are its captions
+
+
+def classify(text, size, body):
+    """-> (type, level) for a text line outside every table."""
+    t = unicodedata.normalize("NFKC", text).strip()
+    if PAGE_NUMBER.match(t):
+        return "furniture", None
+    if UNIT.search(t) and len(t) <= 40:
+        return "unit", None
+    if FOOTNOTE.match(t):
+        return "footnote", None
+    if len(t) <= 60:
+        for pat, level in HEADING_NUM:
+            if pat.match(unicodedata.normalize("NFKC", text.strip())) or pat.match(text.strip()):
+                return "heading", level
+        if BRACKET_LABEL.match(t):
+            return "heading", 1
+        if body and size >= 1.15 * body:
+            return "heading", 1
+    return "text", None
+
+
+def text_lines(chars, tables, page_width):
+    """Every character not inside a table cell becomes part of a text line (nothing is dropped).
+    -> lines [{text, parts, bbox, size}] top to bottom."""
+    boxes = [c["bbox"] for t in tables for c in t["cells"] if c.get("bbox")]
+    def in_cell(ch):
+        cx, cy = (ch["bbox"][0] + ch["bbox"][2]) / 2, (ch["bbox"][1] + ch["bbox"][3]) / 2
+        return any(b[0] - 0.6 <= cx <= b[2] + 0.6 and b[1] - 0.6 <= cy <= b[3] + 0.6 for b in boxes)
+    free = [ch for ch in chars if not ch["c"].strip() or not in_cell(ch)]
+    lines = []
+    for row in rows_of(free):
+        parts = [c["raw_text"] for c in row if c["raw_text"]]
+        if not parts:
+            continue
+        bb = [min(c["bbox"][0] for c in row), min(c["bbox"][1] for c in row), max(c["bbox"][2] for c in row), max(c["bbox"][3] for c in row)]
+        glyphs = [ch for ch in free if ch["c"].strip() and bb[0] - 0.6 <= (ch["bbox"][0] + ch["bbox"][2]) / 2 <= bb[2] + 0.6
+                  and bb[1] - 0.6 <= (ch["bbox"][1] + ch["bbox"][3]) / 2 <= bb[3] + 0.6]
+        size = sorted(ch["size"] for ch in glyphs)[len(glyphs) // 2] if glyphs else 0.0
+        lines.append({"text": "  ".join(parts), "parts": parts, "bbox": [round(v, 2) for v in bb], "size": round(size, 2)})
+    return lines
+
+
+def chain_captions(table, lines):
+    """Lines stacked directly above a table (heading, title, unit, notes such as （訂正後）) are all its
+    captions: the nearest within CAPTION_GAP, then each next one up while the gap stays within one
+    line height; a long paragraph line ends the chain."""
+    x0, y0, x1, _ = table["regions"][0]["bbox"]
+    above = sorted((l for l in lines if l["bbox"][3] <= y0 + 1 and overlap(l["bbox"][0], l["bbox"][2], x0, x1) > 0),
+                   key=lambda l: -l["bbox"][3])
+    got, top = [], y0
+    for l in above:
+        h = l["bbox"][3] - l["bbox"][1]
+        if len(got) >= CAPTION_CHAIN or top - l["bbox"][3] > (CAPTION_GAP if not got else 1.5 * h):
+            break
+        if got and len(l["text"]) > 80:
+            break
+        got.append(l)
+        top = l["bbox"][1]
+    return list(reversed(got))
+
+
+def page_blocks(chars, tables, page, pno):
+    """Reading-order blocks of one text-layer page: tables plus every other line, typed. Returns the
+    blocks and the number of glyphs that ended up nowhere (must be 0)."""
+    lines = text_lines(chars, tables, page.rect.width)
+    body = sorted(c["size"] for c in chars if c["c"].strip())
+    body = body[len(body) // 2] if body else 0.0
+    cap_of = {}
+    for t in tables:
+        caps = chain_captions(t, lines)
+        t["captions"] = [{"text": l["text"], "bbox": l["bbox"]} for l in caps]
+        for l in caps:
+            cap_of[id(l)] = t
+    blocks = []
+    for l in lines:
+        kind, level = classify(l["text"], l["size"], body)
+        if kind == "text" and id(l) in cap_of:
+            kind = "caption"
+        b = {"type": kind, "text": l["text"], "bbox": l["bbox"], "source": "text_layer" if not any(
+            ch.get("unit") for ch in chars) else "ocr"}
+        if level:
+            b["level"] = level
+        if len(l["parts"]) > 1:
+            b["parts"] = l["parts"]
+        blocks.append(b)
+    for t in tables:
+        bb = next((r["bbox"] for r in t["regions"] if r["page"] == pno), t["regions"][0]["bbox"])
+        blocks.append({"type": "table", "bbox": bb, "_ref": t})
+    blocks.sort(key=lambda b: (round(b["bbox"][1] / 3), b["bbox"][0]))
+    # conservation: a glyph inside no table cell and no text line is lost (counted directly; boxes overlap)
+    boxes = [c["bbox"] for t in tables for c in t["cells"] if c.get("bbox")] + [l["bbox"] for l in lines]
+    lost = sum(1 for ch in chars if ch["c"].strip() and not any(
+        b[0] - 0.6 <= (ch["bbox"][0] + ch["bbox"][2]) / 2 <= b[2] + 0.6 and b[1] - 0.6 <= (ch["bbox"][1] + ch["bbox"][3]) / 2 <= b[3] + 0.6
+        for b in boxes))
+    return blocks, lost
+
+
+LIGHTON_TYPES = {"title": "heading", "text": "text", "list": "text", "header": "furniture", "footer": "furniture",
+                 "page_number": "furniture", "caption": "caption", "figure_title": "caption", "footnote": "footnote",
+                 "formula": "text", "code": "text", "aside_text": "text", "image": "figure", "chart": "figure",
+                 "figure": "figure", "header_image": "furniture", "footer_image": "furniture"}
+
+
+def lighton_blocks(lo, tables):
+    """OCR page: LightOnOCR's own labeled blocks, in its reading order. Text is OCR text, so it is
+    marked unverified (only numbers in tables are double-checked)."""
+    blocks = []
+    for b in lo["blocks"]:
+        label = b["label"].rstrip("+")
+        if label.startswith("table"):
+            mine = [t for t in tables if t.get("_block") is b or t.get("_block_bbox") == b["bbox"]]
+            blocks += [{"type": "table", "bbox": t["regions"][0]["bbox"], "_ref": t} for t in mine]
+            continue
+        text = re.sub(r"<[^>]+>", " ", b["text"]).strip()
+        m = re.match(r"^(#+)\s*", text)
+        out = {"type": LIGHTON_TYPES.get(label, "text"), "text": re.sub(r"^#+\s*", "", text), "bbox": [round(v, 2) for v in b["bbox"]],
+               "source": "ocr", "flags": ["ocr_text_unverified"]}
+        if out["type"] == "heading":
+            out["level"] = len(m.group(1)) if m else 1
+        elif out["type"] in ("text", "caption"):  # same line rules as text-layer pages (unit, page number, note)
+            kind, level = classify(out["text"], 0, 0)
+            if kind in ("unit", "furniture", "footnote", "heading"):
+                out["type"] = kind
+                if level:
+                    out["level"] = level
+        blocks.append(out)
+    for t in tables:
+        if not any(x.get("_ref") is t for x in blocks):
+            blocks.append({"type": "table", "bbox": t["regions"][0]["bbox"], "_ref": t})
+    lines = [x for x in blocks if x["type"] != "table"]
+    for t in tables:
+        t["captions"] = [{"text": l["text"], "bbox": l["bbox"]} for l in chain_captions(t, lines)]
+    return blocks
+
+
 def parse(pdf_path, doc_id=None, progress=None):
     """progress(event, page, detail): optional callback; events page_start, ocr_start, ocr_done."""
     doc = pymupdf.open(pdf_path)
@@ -1149,7 +1294,7 @@ def parse(pdf_path, doc_id=None, progress=None):
         chars, info, pflags = page_text(pdf_path, page, progress)
         out["pages"].append({"page": pno, "width": page.rect.width, "height": page.rect.height,
                              "rotation": page.rotation, "text_source": info["text_source"],
-                             "text_layer_audit": info, "flags": pflags})
+                             "text_layer_audit": info, "flags": pflags, "blocks": []})
         lo_struct = (info["text_source"] == "ocr" and OCR_STRUCTURE == "lighton" and info.get("ocr", {}).get("lighton")
                      and not info["ocr"]["page_unverified"])
         if lo_struct:
@@ -1158,6 +1303,7 @@ def parse(pdf_path, doc_id=None, progress=None):
             # structure is LightOn's own, so a number Tesseract missed is already `ocr_unconfirmed` on its cell
             tables = lighton_tables(data, pno)
             tables.sort(key=lambda t: (t["regions"][0]["bbox"][1], t["regions"][0]["bbox"][0]))
+            out["pages"][-1]["blocks"] = lighton_blocks(data[1], tables)
             per_page.append(tables)  # conservation for these is ocr_numbers_unmatched (word boxes vs LightOn text)
             continue
         regions, leftover = page_regions(page, chars) if chars else ([], [])
@@ -1196,6 +1342,10 @@ def parse(pdf_path, doc_id=None, progress=None):
                 n_text = len(tables)
             if n_text == len(tables):  # the text finder sides with us: only the line finder disagrees
                 flags.remove("table_count_disagrees")
+        blocks, lost = page_blocks(chars, tables, page, pno) if chars else ([], 0)
+        out["pages"][-1]["blocks"] = blocks
+        if lost:
+            flags.append("text_not_captured")  # a character on the page is in no table cell and no text line
         per_page.append(tables)
     # Cross-page: the last table of page p continues as the first table of page p+1 when the
     # columns line up and the header repeats or a continuation marker is printed (design.md §1.5).
@@ -1217,6 +1367,17 @@ def parse(pdf_path, doc_id=None, progress=None):
             t.pop("_ruled", None)
             t["table_id"] = f"t{len(out['tables']) + 1}"
             out["tables"].append(t)
+    for pg in out["pages"]:
+        for b in pg["blocks"]:
+            t = b.pop("_ref", None)
+            if t is not None:
+                cont = t.get("_merged_into")
+                b["table_id"] = (cont or t)["table_id"]
+                if cont is not None:
+                    b["continued"] = True  # rows of a table that started on an earlier page
+    for t in out["tables"]:
+        for k in ("_merged_into", "_block_bbox", "_block"):
+            t.pop(k, None)
     return out
 
 
@@ -1243,6 +1404,16 @@ def _selftest():
     assert normalize("1,23")["flags"] == ["ambiguous_number"] and normalize("－")["blank_kind"] == "dash"
     assert normalize("1,234※2")["footnote_refs"] == ["※2"] and normalize("１２.５％")["value_type"] == "percent"
     assert parse_unit("(In thousands of U.S. dollars)") == {"raw_text": "(In thousands of U.S. dollars)", "scale": 1000, "currency": "USD"}
+    full = parse(sample)
+    pg = full["pages"][0]
+    texts = [b.get("text") for b in pg["blocks"]]
+    for line in ("（訂正後）", "３．連結財務諸表及び主な注記", "（１）連結貸借対照表", "（単位：千円）", "- 4 -"):
+        assert line in texts, (line, texts)  # nothing on the page is lost
+    kinds = {b.get("text"): (b["type"], b.get("level")) for b in pg["blocks"]}
+    assert kinds["３．連結財務諸表及び主な注記"] == ("heading", 1) and kinds["（１）連結貸借対照表"] == ("heading", 2)
+    assert kinds["- 4 -"][0] == "furniture" and kinds["（単位：千円）"][0] == "unit"
+    assert [b["type"] for b in pg["blocks"]].count("table") == 1 and "text_not_captured" not in pg["flags"]
+    assert [c["text"] for c in full["tables"][0]["captions"]] == ["（訂正後）", "３．連結財務諸表及び主な注記", "（１）連結貸借対照表", "（単位：千円）"]
     totals = next(i for i in t["issues"] if i["check"] == "totals")
     assert totals["failed"] == 0 and totals["passed"] >= 10, totals  # 流動資産合計 .. 資産合計, 純額 rows
     assert not t["needs_review"] and not any(c["flags"] for c in t["cells"] if c["value"] is not None)

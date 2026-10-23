@@ -1,8 +1,10 @@
 # PDF-Detox
 
-Turns tables in PDF pages (financial statements, filings, bills, datasheets; Japanese and English)
-into structured tables: every cell keeps its exact printed text, numbers get an exact value, and
-every number that the parser cannot verify is **flagged for review instead of guessed**.
+Turns PDF pages (financial statements, filings, bills, datasheets; Japanese and English) into
+structured output where **nothing on the page is lost**. Every table becomes cells that keep their
+exact printed text, numbers get an exact value, and every heading, caption, unit line, text line,
+footnote and page number is kept in reading order. Every number that the parser cannot verify is
+**flagged for review instead of guessed**.
 
 The goal is not the highest average score. It is: **no wrong number reaches the output unflagged.**
 
@@ -162,8 +164,9 @@ for AI Agents") or Hugging Face. Put it in `./parsebench/`, so that `parsebench/
 2  parse several files (a folder or paths)
 3  exit
 ```
-- **Option 1:** shows the tables in the terminal and saves `<name>_parsed.md`, `.html` or
-  `.json` next to the PDF. It asks for the format; md is the default.
+- **Option 1:** shows each page in the terminal in reading order (headings, captions, unit
+  lines, text, tables, notes, page number) and saves `<name>_parsed.md`, `.html` or `.json` next
+  to the PDF. It asks for the format; md is the default.
 - **Option 2:** takes a folder or several paths, asks for the format once, saves each file, and
   prints a summary per file: pages, tables, flagged cells, OCR pages, time, saved path.
 - **Flagged cells** are marked ⚠ in the terminal, md and html, with a flag list at the end, and
@@ -179,6 +182,22 @@ for AI Agents") or Hugging Face. Put it in `./parsebench/`, so that `parsebench/
 .venv/bin/python app.py some/folder other.pdf --format json                     # full schema, see docs/design.md §2
 .venv/bin/python src/parser.py file.pdf --out out_dir/                          # parser only, JSON
 ```
+
+**What is saved.** Nothing on the page is dropped:
+
+- **Pages:** each page has `blocks` in reading order. A block's `type` is one of `heading` (with
+  `level`), `caption`, `unit`, `text`, `footnote`, `furniture` (page numbers), `figure` (OCR
+  only), or `table` (with `table_id`; `continued: true` on later pages of a table that spans
+  pages).
+- **Block details:** every block has its `text`, `bbox` and `source` (`text_layer` or `ocr`). Text
+  read by OCR is marked `ocr_text_unverified`, since only table numbers are double-checked.
+- **Tables:**
+  - `captions` holds all the lines stacked directly above a table (for the sample:
+    `（訂正後）`, `３．連結財務諸表及び主な注記`, `（１）連結貸借対照表`, `（単位：千円）`).
+  - `title` (the nearest caption line) and `unit` are kept as well.
+- **Nothing-lost check:** every character on a text-layer page must end up in a table cell or a
+  text line. Otherwise the page is flagged `text_not_captured`; this happens on 0 of 530 pages.
+- **Output formats:** md and html show the whole page in that order; json has the full schema.
 
 **Settings (environment variables)**
 
@@ -213,7 +232,10 @@ validation ── totals with rounding tolerance (net 純額 rows), every charac
               column type, column conflicts, cross-page confirmation, unit, OCR agreement,
               page checks → flags (verified or flagged, nothing in between)
   ▼
-output ── JSON (schema: raw_text, value, bbox, flags per cell) · Markdown · HTML
+page blocks ── every character not in a table cell → text lines → heading (numbering / size) · caption
+               (stacked above a table) · unit · text · footnote · page furniture; all in reading order
+  ▼
+output ── JSON (pages[].blocks, tables[].cells: raw_text, value, bbox, flags) · Markdown · HTML
 ```
 
 ```
@@ -297,6 +319,13 @@ number (sign kept, no scale applied).
   impractical on MPS (24 min/page).
 - **Not built:** CSV output (JSON is the machine format), and the region-level ink coverage check
   in the text-layer audit.
+- **Page text blocks:**
+  - Reading order is top to bottom, then left to right, so a page with two text columns
+    interleaves their lines.
+  - Headings are found by numbering (`３．`, `（１）`, `第1章`), short bracketed labels
+    (`（訂正後）`) and font size: a rule, not a model.
+  - Text read by OCR is kept but marked unverified.
+  - Text blocks are not scored by any metric, because the benchmarks have table ground truth only.
 
 ## Next steps
 

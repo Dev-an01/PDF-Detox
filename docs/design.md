@@ -590,3 +590,28 @@ Open:
   flags: review 0% -> 75.8%); LightOnOCR+Tesseract 61.6 / 80.4; LightOnOCR+Vision 67.6 / 79.8.
 - The repeated-header (side-by-side) split comes from one dev page (SERFF page275).
 - The icon-font audit fix lost 16 exact numbers on one test page.
+
+## 11. Page blocks: nothing on the page is lost (after m7)
+Asked at review: the sample's three header lines were missing from the output. `（１）連結貸借対照表`
+became the title, but `３．連結財務諸表及び主な注記` and `（訂正後）` were dropped, because only tables
+were output.
+- **Blocks:** every page now has `blocks` in reading order. Every character not inside a table
+  cell is grouped into text lines (the same `rows_of` as tables), and each line is typed:
+  - `heading`, by numbering (`第N章`, `N．` level 1, `（N）` level 2, `①` level 3), a short
+    bracketed label (`（訂正後）`, `【連結】`), or a font ≥ 1.15× the page median;
+  - `unit`, `footnote` (`※`, `*1`, `注`, `Note`), `furniture` (page number);
+  - `caption`, for a line stacked directly above a table;
+  - `text` otherwise.
+- **Tables:** they get `captions`, the whole chain of lines directly above them (nearest within
+  40 pt, then each next one up within 1.5 line heights, at most 6). `title` and `unit` are
+  unchanged, so no table and no score changed.
+- **OCR pages:** these use LightOnOCR's own labeled blocks, run through the same line rules,
+  marked `ocr_text_unverified`.
+- **Cross-page tables:** later pages carry `{"type": "table", "continued": true}`.
+- **Nothing-lost check:** a glyph in no cell and no line flags the page `text_not_captured`. It
+  fires on 0 of 530 pages. Two real bugs were found while building it:
+  - my first counter double-counted overlapping boxes;
+  - a cell's right edge was taken from its last glyph rather than its widest, which only mattered
+    for overlapping OCR word boxes. Fixing it changed boxes on 1 test page and 1 dev page; scores
+    are identical (0 pages better or worse on dev and test).
+- **Limits:** single-column reading order; heading rules, not a model; text blocks are not scored.

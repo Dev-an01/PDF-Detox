@@ -106,14 +106,60 @@ def all_flags(doc):
     return out
 
 
+def page_items(doc):
+    """-> [(page, [block...])], every table appearing once at its first block (later pages of a
+    table that continues across pages get a 'continued' marker block)."""
+    tables = {t["table_id"]: t for t in doc["tables"]}
+    placed, out = set(), []
+    for pg in doc["pages"]:
+        blocks = []
+        for b in pg.get("blocks", []):
+            if b["type"] == "table":
+                tid = b["table_id"]
+                if tid in placed or b.get("continued"):
+                    blocks.append({"type": "continued", "table_id": tid})
+                    continue
+                placed.add(tid)
+                blocks.append(dict(b, table=tables[tid]))
+            else:
+                blocks.append(b)
+        out.append((pg, blocks))
+    rest = [t for tid, t in tables.items() if tid not in placed]  # safety: no table is ever dropped
+    if rest and out:
+        out[-1][1].extend({"type": "table", "table_id": t["table_id"], "table": t} for t in rest)
+    return out
+
+
+LABEL = {"unit": "unit", "caption": "caption", "footnote": "note", "furniture": "page furniture", "figure": "figure"}
+
+
+def block_line(b):
+    """One non-table block as plain text for the terminal."""
+    mark = f"{WARN} " if b.get("flags") else ""
+    if b["type"] == "heading":
+        return f"{'#' * b.get('level', 1)} {mark}{b['text']}"
+    if b["type"] in LABEL:
+        return f"[{LABEL[b['type']]}] {mark}{b['text']}"
+    return f"{mark}{b['text']}"
+
+
 def print_doc(doc):
     print("\npages:")
     for pno, src, fl in page_sources(doc):
         print(f"  page {pno}: {src}" + (f"   {WARN} {', '.join(fl)}" if fl else ""))
     pf = page_flag_map(doc)
-    for t in doc["tables"]:
-        print(f"\n{t['table_id']}: {describe(t)}")
-        print_table(t, pf)
+    for pg, blocks in page_items(doc):
+        print(f"\n---- page {pg['page']} ({pg['text_source']}) ----")
+        for b in blocks:
+            if b["type"] == "table":
+                t = b["table"]
+                print(f"\n{t['table_id']}: {describe(t)}")
+                print_table(t, pf)
+                print()
+            elif b["type"] == "continued":
+                print(f"({b['table_id']} continues here; its rows are shown with the table above)")
+            else:
+                print(block_line(b))
     flags = all_flags(doc)
     print(f"\nflagged cells: {len(flags)}")
     for tid, r, c, text, reasons in flags[:40]:
@@ -131,16 +177,29 @@ def to_markdown(doc):
     pf = page_flag_map(doc)
     out = [f"# {doc['doc_id']}", "", f"Source: `{doc['source_file']}`", "", "## Pages", ""]
     out += [f"- page {p}: {src}" + (f" {WARN} {', '.join(fl)}" if fl else "") for p, src, fl in page_sources(doc)]
-    for t in doc["tables"]:
-        grid, _ = table_grid(t, pf)
-        out += ["", f"## {t['table_id']}", "", describe(t), ""]
-        head = grid[: max(t["header_rows"], 1)]
-        # one markdown header row: stacked header rows joined with " / "
-        hdr = [" / ".join(x for x in (row[k] for row in head) if x) for k in range(t["n_cols"])]
-        out.append("| " + " | ".join(esc_md(h) for h in hdr) + " |")
-        out.append("|" + "---|" * t["n_cols"])
-        for row in grid[max(t["header_rows"], 1):]:
-            out.append("| " + " | ".join(esc_md(x) for x in row) + " |")
+    for pg, blocks in page_items(doc):
+        out += ["", f"## Page {pg['page']} ({pg['text_source']})", ""]
+        for b in blocks:
+            if b["type"] == "table":
+                t = b["table"]
+                grid, _ = table_grid(t, pf)
+                out += ["", f"**{t['table_id']}**: {describe(t)}", ""]
+                head = grid[: max(t["header_rows"], 1)]
+                # one markdown header row: stacked header rows joined with " / " (html keeps the real spans)
+                hdr = [" / ".join(x for x in (row[k] for row in head) if x) for k in range(t["n_cols"])]
+                out.append("| " + " | ".join(esc_md(h) for h in hdr) + " |")
+                out.append("|" + "---|" * t["n_cols"])
+                for row in grid[max(t["header_rows"], 1):]:
+                    out.append("| " + " | ".join(esc_md(x) for x in row) + " |")
+                out.append("")
+            elif b["type"] == "continued":
+                out += [f"*({b['table_id']} continues on this page; its rows are in the table above)*", ""]
+            elif b["type"] == "heading":
+                out += [f"{'#' * min(2 + b.get('level', 1), 6)} {(WARN + ' ') if b.get('flags') else ''}{esc_md(b['text'])}", ""]
+            elif b["type"] == "text":
+                out += [f"{(WARN + ' OCR: ') if b.get('flags') else ''}{esc_md(b['text'])}", ""]
+            else:
+                out += [f"*[{LABEL.get(b['type'], b['type'])}]* {(WARN + ' ') if b.get('flags') else ''}{esc_md(b['text'])}", ""]
     flags = all_flags(doc)
     out += ["", "## Flagged cells", "", f"{len(flags)} cells need review." if flags else "None."]
     out += [f"- {WARN} {tid} row {r} col {c}: `{esc_md(text)}` ({', '.join(reasons)})" for tid, r, c, text, reasons in flags]
@@ -158,6 +217,9 @@ h1 { font-size:20px; } h2 { font-size:16px; margin-top:28px; } .muted { color:va
 td, th { border:1px solid var(--line); padding:4px 8px; vertical-align:top; } th { background:var(--head); text-align:center; }
 td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .flag { background:var(--flag); outline:2px solid var(--flagline); outline-offset:-2px; }
+section.page { border-top:1px solid var(--line); margin-top:18px; } .blk { margin:4px 0; }
+.tag { font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:3px; padding:0 4px; margin-right:4px; }
+.furniture { color:var(--muted); font-size:12px; }
 """
 
 
@@ -170,28 +232,48 @@ def to_html(doc):
            "<h2>Pages</h2><ul>"]
     out += [f"<li>page {p}: {e(src)}" + (f" {WARN} {e(', '.join(fl))}" if fl else "") + "</li>" for p, src, fl in page_sources(doc)]
     out.append("</ul>")
-    for t in doc["tables"]:
-        out.append(f"<h2>{e(t['table_id'])}</h2><p class='muted'>{e(describe(t))}</p><div class='wrap'><table>")
-        rows = {}
-        for c in t["cells"]:
-            rows.setdefault(c["row"], []).append(c)
-        for r in sorted(rows):
-            out.append("<tr>")
-            for c in sorted(rows[r], key=lambda c: c["col"]):
-                reasons = cell_flags(c, t, pf)
-                show = reasons and (c.get("value") is not None or c["flags"])
-                tag = "th" if c["is_header"] else "td"
-                cls = " ".join(x for x in ("num" if c.get("value") is not None else "", "flag" if show else "") if x)
-                span = (f" rowspan='{c['row_span']}'" if c["row_span"] > 1 else "") + (f" colspan='{c['col_span']}'" if c["col_span"] > 1 else "")
-                title = f" title='{e(', '.join(reasons))}'" if show else ""
-                text = (f"{WARN} " if show else "") + e(c["raw_text"])
-                out.append(f"<{tag}{span}{' class=' + repr(cls) if cls else ''}{title}>{text}</{tag}>")
-            out.append("</tr>")
-        out.append("</table></div>")
+    for pg, blocks in page_items(doc):
+        out.append(f"<section class='page'><h2>Page {pg['page']} <span class='muted'>({e(pg['text_source'])})</span></h2>")
+        for b in blocks:
+            warn = f"{WARN} " if b.get("flags") else ""
+            if b["type"] == "table":
+                out.append(table_html(b["table"], pf))
+            elif b["type"] == "continued":
+                out.append(f"<p class='muted'>({e(b['table_id'])} continues on this page; its rows are in the table above)</p>")
+            elif b["type"] == "heading":
+                lv = min(2 + b.get("level", 1), 6)
+                out.append(f"<h{lv} class='blk'>{warn}{e(b['text'])}</h{lv}>")
+            elif b["type"] == "text":
+                out.append(f"<p class='blk'>{warn}{e(b['text'])}</p>")
+            else:
+                out.append(f"<p class='blk {b['type']}'><span class='tag'>{e(LABEL.get(b['type'], b['type']))}</span> {warn}{e(b['text'])}</p>")
+        out.append("</section>")
     flags = all_flags(doc)
     out.append(f"<h2>Flagged cells ({len(flags)})</h2><ul>")
     out += [f"<li>{WARN} {e(tid)} row {r} col {c}: <code>{e(text)}</code> ({e(', '.join(reasons))})</li>" for tid, r, c, text, reasons in flags]
     out.append("</ul></main></body></html>")
+    return "\n".join(out)
+
+
+def table_html(t, pf):
+    e = html.escape
+    out = [f"<h3>{e(t['table_id'])}</h3><p class='muted'>{e(describe(t))}</p><div class='wrap'><table>"]
+    rows = {}
+    for c in t["cells"]:
+        rows.setdefault(c["row"], []).append(c)
+    for r in sorted(rows):
+        out.append("<tr>")
+        for c in sorted(rows[r], key=lambda c: c["col"]):
+            reasons = cell_flags(c, t, pf)
+            show = reasons and (c.get("value") is not None or c["flags"])
+            tag = "th" if c["is_header"] else "td"
+            cls = " ".join(x for x in ("num" if c.get("value") is not None else "", "flag" if show else "") if x)
+            span = (f" rowspan='{c['row_span']}'" if c["row_span"] > 1 else "") + (f" colspan='{c['col_span']}'" if c["col_span"] > 1 else "")
+            title = f" title='{e(', '.join(reasons))}'" if show else ""
+            text = (f"{WARN} " if show else "") + e(c["raw_text"])
+            out.append(f"<{tag}{span}{' class=' + repr(cls) if cls else ''}{title}>{text}</{tag}>")
+        out.append("</tr>")
+    out.append("</table></div>")
     return "\n".join(out)
 
 
