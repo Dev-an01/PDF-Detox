@@ -1,0 +1,953 @@
+{
+ "doc_id": "syn_en_bill_ruled_wrapped_ocr",
+ "source_file": "gold/pdf/syn_en_bill_ruled_wrapped_ocr.pdf",
+ "tags": [
+  "synthetic",
+  "en",
+  "bill",
+  "ruled",
+  "wrapped_label",
+  "ocr"
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.0,
+   "height": 842.0,
+   "rotation": 0,
+   "text_source": "ocr"
+  }
+ ],
+ "tables": [
+  {
+   "table_id": "t1",
+   "title": "Invoice details",
+   "title_bbox": [
+    50.0,
+    59.17,
+    119.7,
+    74.29
+   ],
+   "unit": {
+    "raw_text": "(Amounts in USD)",
+    "scale": 1,
+    "currency": "USD"
+   },
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      545.0,
+      274.0
+     ]
+    }
+   ],
+   "n_rows": 10,
+   "n_cols": 4,
+   "header_rows": 1,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [
+      "Description"
+     ],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "Qty"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "Unit price"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 3,
+     "header_path": [
+      "Amount"
+     ],
+     "role": "value"
+    }
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 7,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 8,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 9,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": true
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      146.25,
+      92.84,
+      188.75,
+      104.52
+     ],
+     "raw_text": "Description",
+     "text": "Description",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      308.39,
+      92.84,
+      321.61,
+      104.52
+     ],
+     "raw_text": "Qty",
+     "text": "Qty",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      377.05,
+      92.84,
+      412.95,
+      104.52
+     ],
+     "raw_text": "Unit price",
+     "text": "Unit price",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      480.35,
+      92.84,
+      509.65,
+      104.52
+     ],
+     "raw_text": "Amount",
+     "text": "Amount",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      106.84,
+      109.74,
+      118.52
+     ],
+     "raw_text": "Office supplies",
+     "text": "Office supplies",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      106.84,
+      341.0,
+      118.52
+     ],
+     "raw_text": "6",
+     "text": "6",
+     "value": "6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      106.84,
+      441.0,
+      118.52
+     ],
+     "raw_text": "55,463",
+     "text": "55,463",
+     "value": "55463",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.28,
+      106.84,
+      541.0,
+      118.52
+     ],
+     "raw_text": "332,778",
+     "text": "332,778",
+     "value": "332778",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      120.84,
+      171.17,
+      146.52
+     ],
+     "raw_text": "Copy paper A4 (500 sheets x 5 reams)",
+     "text": "Copy paper A4 (500 sheets x 5 reams)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      134.84,
+      341.0,
+      146.52
+     ],
+     "raw_text": "5",
+     "text": "5",
+     "value": "5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      134.84,
+      441.0,
+      146.52
+     ],
+     "raw_text": "72,717",
+     "text": "72,717",
+     "value": "72717",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.28,
+      134.84,
+      541.0,
+      146.52
+     ],
+     "raw_text": "363,585",
+     "text": "363,585",
+     "value": "363585",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      148.84,
+      111.63,
+      160.52
+     ],
+     "raw_text": "Toner cartridge",
+     "text": "Toner cartridge",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      148.84,
+      341.0,
+      160.52
+     ],
+     "raw_text": "1",
+     "text": "1",
+     "value": "1",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      148.84,
+      441.0,
+      160.52
+     ],
+     "raw_text": "37,999",
+     "text": "37,999",
+     "value": "37999",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.01,
+      148.84,
+      541.0,
+      160.52
+     ],
+     "raw_text": "37,999",
+     "text": "37,999",
+     "value": "37999",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      162.84,
+      87.07,
+      174.52
+     ],
+     "raw_text": "Shipping",
+     "text": "Shipping",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      162.84,
+      341.0,
+      174.52
+     ],
+     "raw_text": "5",
+     "text": "5",
+     "value": "5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      162.84,
+      441.0,
+      174.52
+     ],
+     "raw_text": "46,653",
+     "text": "46,653",
+     "value": "46653",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.28,
+      162.84,
+      541.0,
+      174.52
+     ],
+     "raw_text": "233,265",
+     "text": "233,265",
+     "value": "233265",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      176.84,
+      163.62,
+      216.52
+     ],
+     "raw_text": "Laptop maintenance contract (annual, including on-site support)",
+     "text": "Laptop maintenance contract (annual, including on-site support)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      204.84,
+      341.0,
+      216.52
+     ],
+     "raw_text": "8",
+     "text": "8",
+     "value": "8",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      204.84,
+      441.0,
+      216.52
+     ],
+     "raw_text": "53,017",
+     "text": "53,017",
+     "value": "53017",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.28,
+      204.84,
+      541.0,
+      216.52
+     ],
+     "raw_text": "424,136",
+     "text": "424,136",
+     "value": "424136",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      218.84,
+      129.58,
+      230.52
+     ],
+     "raw_text": "Meeting room rental",
+     "text": "Meeting room rental",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      218.84,
+      341.0,
+      230.52
+     ],
+     "raw_text": "6",
+     "text": "6",
+     "value": "6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      218.84,
+      441.0,
+      230.52
+     ],
+     "raw_text": "66,127",
+     "text": "66,127",
+     "value": "66127",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.28,
+      218.84,
+      541.0,
+      230.52
+     ],
+     "raw_text": "396,762",
+     "text": "396,762",
+     "value": "396762",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      232.84,
+      87.06,
+      244.52
+     ],
+     "raw_text": "Discount",
+     "text": "Discount",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.27,
+      232.84,
+      341.0,
+      244.52
+     ],
+     "raw_text": "5",
+     "text": "5",
+     "value": "5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.01,
+      232.84,
+      441.0,
+      244.52
+     ],
+     "raw_text": "66,478",
+     "text": "66,478",
+     "value": "66478",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      504.62,
+      232.84,
+      541.0,
+      244.52
+     ],
+     "raw_text": "(332,390)",
+     "text": "(332,390)",
+     "value": "-332390",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      246.84,
+      109.27,
+      258.52
+     ],
+     "raw_text": "Sales tax (8%)",
+     "text": "Sales tax (8%)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      285.0,
+      246.0,
+      345.0,
+      260.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      345.0,
+      246.0,
+      445.0,
+      260.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.28,
+      246.84,
+      541.0,
+      258.52
+     ],
+     "raw_text": "116,490",
+     "text": "116,490",
+     "value": "116490",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      260.84,
+      89.44,
+      272.52
+     ],
+     "raw_text": "Total due",
+     "text": "Total due",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      285.0,
+      260.0,
+      345.0,
+      274.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      345.0,
+      260.0,
+      445.0,
+      274.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      260.84,
+      541.0,
+      272.52
+     ],
+     "raw_text": "1,572,625",
+     "text": "1,572,625",
+     "value": "1572625",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  }
+ ]
+}

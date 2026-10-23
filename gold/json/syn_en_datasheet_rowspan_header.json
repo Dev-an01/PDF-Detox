@@ -1,0 +1,1008 @@
+{
+ "doc_id": "syn_en_datasheet_rowspan_header",
+ "source_file": "gold/pdf/syn_en_datasheet_rowspan_header.pdf",
+ "tags": [
+  "synthetic",
+  "en",
+  "datasheet",
+  "ruled",
+  "multi_header",
+  "rowspan",
+  "decimals",
+  "blanks",
+  "text_layer"
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.0,
+   "height": 842.0,
+   "rotation": 0,
+   "text_source": "text_layer"
+  }
+ ],
+ "tables": [
+  {
+   "table_id": "t1",
+   "title": "Electrical characteristics",
+   "title_bbox": [
+    50.0,
+    59.17,
+    167.96,
+    74.29
+   ],
+   "unit": null,
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      78.0,
+      545.0,
+      190.0
+     ]
+    }
+   ],
+   "n_rows": 8,
+   "n_cols": 6,
+   "header_rows": 2,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [
+      "Parameter"
+     ],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "Symbol"
+     ],
+     "role": "text"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "Value",
+      "Min"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 3,
+     "header_path": [
+      "Value",
+      "Typ"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 4,
+     "header_path": [
+      "Value",
+      "Max"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 5,
+     "header_path": [
+      "Unit"
+     ],
+     "role": "text"
+    }
+   ],
+   "rows": [
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 7,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 2,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      117.66,
+      85.84,
+      157.34,
+      97.52
+     ],
+     "raw_text": "Parameter",
+     "text": "Parameter",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 2,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      240.83,
+      85.84,
+      269.17,
+      97.52
+     ],
+     "raw_text": "Symbol",
+     "text": "Symbol",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 3,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      371.63,
+      78.84,
+      393.37,
+      90.52
+     ],
+     "raw_text": "Value",
+     "text": "Value",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 5,
+     "row_span": 2,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      504.94,
+      85.84,
+      520.06,
+      97.52
+     ],
+     "raw_text": "Unit",
+     "text": "Unit",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      310.65,
+      92.84,
+      324.35,
+      104.52
+     ],
+     "raw_text": "Min",
+     "text": "Min",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      375.42,
+      92.84,
+      389.58,
+      104.52
+     ],
+     "raw_text": "Typ",
+     "text": "Typ",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      439.47,
+      92.84,
+      455.53,
+      104.52
+     ],
+     "raw_text": "Max",
+     "text": "Max",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      106.84,
+      109.75,
+      118.52
+     ],
+     "raw_text": "Supply voltage",
+     "text": "Supply voltage",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      246.03,
+      106.84,
+      263.97,
+      118.52
+     ],
+     "raw_text": "VDD",
+     "text": "VDD",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      337.5,
+      106.84,
+      346.0,
+      118.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      391.63,
+      106.84,
+      411.0,
+      118.52
+     ],
+     "raw_text": "-18.0",
+     "text": "-18.0",
+     "value": "-18.0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.46,
+      106.84,
+      476.0,
+      118.52
+     ],
+     "raw_text": "11.8",
+     "text": "11.8",
+     "value": "11.8",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      509.67,
+      106.84,
+      515.33,
+      118.52
+     ],
+     "raw_text": "V",
+     "text": "V",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      120.84,
+      108.8,
+      132.52
+     ],
+     "raw_text": "Supply current",
+     "text": "Supply current",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      247.68,
+      120.84,
+      262.32,
+      132.52
+     ],
+     "raw_text": "IDD",
+     "text": "IDD",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.63,
+      120.84,
+      346.0,
+      132.52
+     ],
+     "raw_text": "-25.7",
+     "text": "-25.7",
+     "value": "-25.7",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      391.63,
+      120.84,
+      411.0,
+      132.52
+     ],
+     "raw_text": "-16.4",
+     "text": "-16.4",
+     "value": "-16.4",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.46,
+      120.84,
+      476.0,
+      132.52
+     ],
+     "raw_text": "19.0",
+     "text": "19.0",
+     "value": "19.0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      506.12,
+      120.84,
+      518.88,
+      132.52
+     ],
+     "raw_text": "mA",
+     "text": "mA",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      134.84,
+      139.51,
+      146.52
+     ],
+     "raw_text": "Operating temperature",
+     "text": "Operating temperature",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      249.57,
+      134.84,
+      260.43,
+      146.52
+     ],
+     "raw_text": "TA",
+     "text": "TA",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      331.35,
+      134.84,
+      346.0,
+      146.52
+     ],
+     "raw_text": "-4.7",
+     "text": "-4.7",
+     "value": "-4.7",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      396.35,
+      134.84,
+      411.0,
+      146.52
+     ],
+     "raw_text": "-3.0",
+     "text": "-3.0",
+     "value": "-3.0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.46,
+      134.84,
+      476.0,
+      146.52
+     ],
+     "raw_text": "40.5",
+     "text": "40.5",
+     "value": "40.5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      507.73,
+      134.84,
+      517.27,
+      146.52
+     ],
+     "raw_text": "°C",
+     "text": "°C",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      148.84,
+      133.85,
+      160.52
+     ],
+     "raw_text": "Input leakage current",
+     "text": "Input leakage current",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      248.62,
+      148.84,
+      261.38,
+      160.52
+     ],
+     "raw_text": "ILK",
+     "text": "ILK",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      337.5,
+      148.84,
+      346.0,
+      160.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      391.63,
+      148.84,
+      411.0,
+      160.52
+     ],
+     "raw_text": "-13.5",
+     "text": "-13.5",
+     "value": "-13.5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      464.19,
+      148.84,
+      476.0,
+      160.52
+     ],
+     "raw_text": "4.9",
+     "text": "4.9",
+     "value": "4.9",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      507.3,
+      148.84,
+      517.7,
+      160.52
+     ],
+     "raw_text": "µA",
+     "text": "μA",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      162.84,
+      127.71,
+      174.52
+     ],
+     "raw_text": "Output high voltage",
+     "text": "Output high voltage",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      245.79,
+      162.84,
+      264.21,
+      174.52
+     ],
+     "raw_text": "VOH",
+     "text": "VOH",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      331.35,
+      162.84,
+      346.0,
+      174.52
+     ],
+     "raw_text": "-3.0",
+     "text": "-3.0",
+     "value": "-3.0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      402.5,
+      162.84,
+      411.0,
+      174.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.46,
+      162.84,
+      476.0,
+      174.52
+     ],
+     "raw_text": "57.6",
+     "text": "57.6",
+     "value": "57.6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      509.67,
+      162.84,
+      515.33,
+      174.52
+     ],
+     "raw_text": "V",
+     "text": "V",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      176.84,
+      114.94,
+      188.52
+     ],
+     "raw_text": "Clock frequency",
+     "text": "Clock frequency",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      245.55,
+      176.84,
+      264.45,
+      188.52
+     ],
+     "raw_text": "fCLK",
+     "text": "fCLK",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.63,
+      176.84,
+      346.0,
+      188.52
+     ],
+     "raw_text": "-12.2",
+     "text": "-12.2",
+     "value": "-12.2",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      399.19,
+      176.84,
+      411.0,
+      188.52
+     ],
+     "raw_text": "6.8",
+     "text": "6.8",
+     "value": "6.8",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.46,
+      176.84,
+      476.0,
+      188.52
+     ],
+     "raw_text": "48.7",
+     "text": "48.7",
+     "value": "48.7",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.77,
+      176.84,
+      521.23,
+      188.52
+     ],
+     "raw_text": "MHz",
+     "text": "MHz",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  }
+ ]
+}

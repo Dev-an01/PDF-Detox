@@ -1,0 +1,31 @@
+# Python / OS
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Datasets, models and caches: download them (see README), never commit
+parsebench/
+models/
+bin/
+.ocr_cache/
+ocr_bench/out/
+ocr_bench/sets/manifest.json
+
+# Generated outputs (rebuild with eval/run_all.py)
+preds/
+eval/parsebench_gold/
+eval/parsebench_dev/
+eval/parsebench_test/
+*_parsed.md
+*_parsed.html
+*_parsed.json
+page_review.html
+numbers_check.html
+
+# Local tool and assistant files
+.gstack/
+.claude/
+CLAUDE.md
+AGENTS.md
+graphify-out/

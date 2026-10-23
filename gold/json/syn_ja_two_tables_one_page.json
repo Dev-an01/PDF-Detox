@@ -1,0 +1,1674 @@
+{
+ "doc_id": "syn_ja_two_tables_one_page",
+ "source_file": "gold/pdf/syn_ja_two_tables_one_page.pdf",
+ "tags": [
+  "synthetic",
+  "ja",
+  "multi_table",
+  "borderless",
+  "ruled",
+  "text_layer"
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.0,
+   "height": 842.0,
+   "rotation": 0,
+   "text_source": "text_layer"
+  }
+ ],
+ "tables": [
+  {
+   "table_id": "t1",
+   "title": "請求明細書",
+   "title_bbox": [
+    50.0,
+    59.53,
+    105.0,
+    73.92
+   ],
+   "unit": {
+    "raw_text": "（単位：円）",
+    "scale": 1,
+    "currency": "JPY"
+   },
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      545.0,
+      190.0
+     ]
+    }
+   ],
+   "n_rows": 7,
+   "n_cols": 4,
+   "header_rows": 1,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [
+      "品名"
+     ],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "数量"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "単価"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 3,
+     "header_path": [
+      "金額"
+     ],
+     "role": "value"
+    }
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": true
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      159.0,
+      93.11,
+      176.0,
+      104.23
+     ],
+     "raw_text": "品名",
+     "text": "品名",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      306.5,
+      93.11,
+      323.5,
+      104.23
+     ],
+     "raw_text": "数量",
+     "text": "数量",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      386.5,
+      93.11,
+      403.5,
+      104.23
+     ],
+     "raw_text": "単価",
+     "text": "単価",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      486.5,
+      93.11,
+      503.5,
+      104.23
+     ],
+     "raw_text": "金額",
+     "text": "金額",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      107.11,
+      105.0,
+      118.23
+     ],
+     "raw_text": "事務用品一式",
+     "text": "事務用品一式",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      107.11,
+      341.0,
+      118.23
+     ],
+     "raw_text": "7",
+     "text": "7",
+     "value": "7",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      107.11,
+      441.0,
+      118.23
+     ],
+     "raw_text": "72,733",
+     "text": "72,733",
+     "value": "72733",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      107.11,
+      541.0,
+      118.23
+     ],
+     "raw_text": "509,131",
+     "text": "509,131",
+     "value": "509131",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      121.11,
+      186.18,
+      132.23
+     ],
+     "raw_text": "コピー用紙Ａ４（５００枚×５冊）",
+     "text": "コピー用紙A4(500枚×5冊)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      121.11,
+      341.0,
+      132.23
+     ],
+     "raw_text": "9",
+     "text": "9",
+     "value": "9",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      121.11,
+      441.0,
+      132.23
+     ],
+     "raw_text": "26,764",
+     "text": "26,764",
+     "value": "26764",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      121.11,
+      541.0,
+      132.23
+     ],
+     "raw_text": "240,876",
+     "text": "240,876",
+     "value": "240876",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      135.11,
+      130.5,
+      146.23
+     ],
+     "raw_text": "トナーカートリッジ",
+     "text": "トナーカートリッジ",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      331.64,
+      135.11,
+      341.0,
+      146.23
+     ],
+     "raw_text": "12",
+     "text": "12",
+     "value": "12",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      135.11,
+      441.0,
+      146.23
+     ],
+     "raw_text": "10,661",
+     "text": "10,661",
+     "value": "10661",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      135.11,
+      541.0,
+      146.23
+     ],
+     "raw_text": "127,932",
+     "text": "127,932",
+     "value": "127932",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      149.11,
+      79.5,
+      160.23
+     ],
+     "raw_text": "配送料",
+     "text": "配送料",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      149.11,
+      341.0,
+      160.23
+     ],
+     "raw_text": "1",
+     "text": "1",
+     "value": "1",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      149.11,
+      441.0,
+      160.23
+     ],
+     "raw_text": "96,090",
+     "text": "96,090",
+     "value": "96090",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      149.11,
+      541.0,
+      160.23
+     ],
+     "raw_text": "96,090",
+     "text": "96,090",
+     "value": "96090",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      163.11,
+      114.36,
+      174.23
+     ],
+     "raw_text": "消費税（10％）",
+     "text": "消費税(10%)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      285.0,
+      162.0,
+      345.0,
+      176.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      345.0,
+      162.0,
+      445.0,
+      176.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      163.11,
+      541.0,
+      174.23
+     ],
+     "raw_text": "97,402",
+     "text": "97,402",
+     "value": "97402",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      177.11,
+      88.0,
+      188.23
+     ],
+     "raw_text": "合計金額",
+     "text": "合計金額",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      285.0,
+      176.0,
+      345.0,
+      190.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      345.0,
+      176.0,
+      445.0,
+      190.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      177.11,
+      541.0,
+      188.23
+     ],
+     "raw_text": "1,071,431",
+     "text": "1,071,431",
+     "value": "1071431",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  },
+  {
+   "table_id": "t2",
+   "title": "電気的特性",
+   "title_bbox": [
+    50.0,
+    219.53,
+    105.0,
+    233.92
+   ],
+   "unit": null,
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      238.0,
+      545.0,
+      350.0
+     ]
+    }
+   ],
+   "n_rows": 8,
+   "n_cols": 6,
+   "header_rows": 2,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [
+      "項目"
+     ],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "記号"
+     ],
+     "role": "text"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "規格値",
+      "最小"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 3,
+     "header_path": [
+      "規格値",
+      "標準"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 4,
+     "header_path": [
+      "規格値",
+      "最大"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 5,
+     "header_path": [
+      "単位"
+     ],
+     "role": "text"
+    }
+   ],
+   "rows": [
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 7,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 2,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      129.0,
+      246.11,
+      146.0,
+      257.23
+     ],
+     "raw_text": "項目",
+     "text": "項目",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 2,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      246.5,
+      246.11,
+      263.5,
+      257.23
+     ],
+     "raw_text": "記号",
+     "text": "記号",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 3,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      369.75,
+      239.11,
+      395.25,
+      250.23
+     ],
+     "raw_text": "規格値",
+     "text": "規格値",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 5,
+     "row_span": 2,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      504.0,
+      246.11,
+      521.0,
+      257.23
+     ],
+     "raw_text": "単位",
+     "text": "単位",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      309.0,
+      253.11,
+      326.0,
+      264.23
+     ],
+     "raw_text": "最小",
+     "text": "最小",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      374.0,
+      253.11,
+      391.0,
+      264.23
+     ],
+     "raw_text": "標準",
+     "text": "標準",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      439.0,
+      253.11,
+      456.0,
+      264.23
+     ],
+     "raw_text": "最大",
+     "text": "最大",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      267.11,
+      88.0,
+      278.23
+     ],
+     "raw_text": "電源電圧",
+     "text": "電源電圧",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      246.78,
+      267.11,
+      263.22,
+      278.23
+     ],
+     "raw_text": "VDD",
+     "text": "VDD",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.94,
+      267.11,
+      346.0,
+      278.23
+     ],
+     "raw_text": "-21.5",
+     "text": "-21.5",
+     "value": "-21.5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      396.62,
+      267.11,
+      411.0,
+      278.23
+     ],
+     "raw_text": "-2.9",
+     "text": "-2.9",
+     "value": "-2.9",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      464.35,
+      267.11,
+      476.0,
+      278.23
+     ],
+     "raw_text": "5.8",
+     "text": "5.8",
+     "value": "5.8",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.09,
+      267.11,
+      514.91,
+      278.23
+     ],
+     "raw_text": "V",
+     "text": "V",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      281.11,
+      88.0,
+      292.23
+     ],
+     "raw_text": "消費電流",
+     "text": "消費電流",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      247.75,
+      281.11,
+      262.25,
+      292.23
+     ],
+     "raw_text": "IDD",
+     "text": "IDD",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.94,
+      281.11,
+      346.0,
+      292.23
+     ],
+     "raw_text": "-18.1",
+     "text": "-18.1",
+     "value": "-18.1",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      402.5,
+      281.11,
+      411.0,
+      292.23
+     ],
+     "raw_text": "－",
+     "text": "-",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.66,
+      281.11,
+      476.0,
+      292.23
+     ],
+     "raw_text": "42.5",
+     "text": "42.5",
+     "value": "42.5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      506.11,
+      281.11,
+      518.89,
+      292.23
+     ],
+     "raw_text": "mA",
+     "text": "mA",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      295.11,
+      88.0,
+      306.23
+     ],
+     "raw_text": "動作温度",
+     "text": "動作温度",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      250.2,
+      295.11,
+      259.8,
+      306.23
+     ],
+     "raw_text": "TA",
+     "text": "TA",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.94,
+      295.11,
+      346.0,
+      306.23
+     ],
+     "raw_text": "-24.5",
+     "text": "-24.5",
+     "value": "-24.5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      391.94,
+      295.11,
+      411.0,
+      306.23
+     ],
+     "raw_text": "-15.2",
+     "text": "-15.2",
+     "value": "-15.2",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.66,
+      295.11,
+      476.0,
+      306.23
+     ],
+     "raw_text": "29.3",
+     "text": "29.3",
+     "value": "29.3",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      508.25,
+      295.11,
+      516.75,
+      306.23
+     ],
+     "raw_text": "℃",
+     "text": "°C",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      309.11,
+      113.5,
+      320.23
+     ],
+     "raw_text": "入力リーク電流",
+     "text": "入力リーク電流",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      249.01,
+      309.11,
+      260.99,
+      320.23
+     ],
+     "raw_text": "ILK",
+     "text": "ILK",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.94,
+      309.11,
+      346.0,
+      320.23
+     ],
+     "raw_text": "-28.3",
+     "text": "-28.3",
+     "value": "-28.3",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      396.62,
+      309.11,
+      411.0,
+      320.23
+     ],
+     "raw_text": "-8.4",
+     "text": "-8.4",
+     "value": "-8.4",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.66,
+      309.11,
+      476.0,
+      320.23
+     ],
+     "raw_text": "10.0",
+     "text": "10.0",
+     "value": "10.0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      507.39,
+      309.11,
+      517.61,
+      320.23
+     ],
+     "raw_text": "μA",
+     "text": "μA",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      323.11,
+      122.0,
+      334.23
+     ],
+     "raw_text": "出力電圧（ハイ）",
+     "text": "出力電圧(ハイ)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      246.45,
+      323.11,
+      263.55,
+      334.23
+     ],
+     "raw_text": "VOH",
+     "text": "VOH",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.94,
+      323.11,
+      346.0,
+      334.23
+     ],
+     "raw_text": "-22.3",
+     "text": "-22.3",
+     "value": "-22.3",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      402.5,
+      323.11,
+      411.0,
+      334.23
+     ],
+     "raw_text": "－",
+     "text": "-",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      461.62,
+      323.11,
+      476.0,
+      334.23
+     ],
+     "raw_text": "-6.8",
+     "text": "-6.8",
+     "value": "-6.8",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.09,
+      323.11,
+      514.91,
+      334.23
+     ],
+     "raw_text": "V",
+     "text": "V",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      337.11,
+      113.5,
+      348.23
+     ],
+     "raw_text": "クロック周波数",
+     "text": "クロック周波数",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      246.5,
+      337.11,
+      263.5,
+      348.23
+     ],
+     "raw_text": "fCLK",
+     "text": "fCLK",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      326.94,
+      337.11,
+      346.0,
+      348.23
+     ],
+     "raw_text": "-15.2",
+     "text": "-15.2",
+     "value": "-15.2",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      396.62,
+      337.11,
+      411.0,
+      348.23
+     ],
+     "raw_text": "-1.3",
+     "text": "-1.3",
+     "value": "-1.3",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 4,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      459.66,
+      337.11,
+      476.0,
+      348.23
+     ],
+     "raw_text": "19.0",
+     "text": "19.0",
+     "value": "19.0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 5,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.93,
+      337.11,
+      521.07,
+      348.23
+     ],
+     "raw_text": "MHz",
+     "text": "MHz",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  }
+ ]
+}

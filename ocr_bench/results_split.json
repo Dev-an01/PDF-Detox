@@ -1,0 +1,296 @@
+{
+ "v1|tesseract|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 89.17408404057132,
+  "unflagged": 424,
+  "review": 8.01076381701511
+ },
+ "v1|tesseract|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 89.70493215593366,
+  "unflagged": 289,
+  "review": 27.568382511307345
+ },
+ "v1|vision|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 64.74849927551232,
+  "unflagged": 1371,
+  "review": 31.2771682881391
+ },
+ "v1|vision|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 40.64182640534138,
+  "unflagged": 2234,
+  "review": 34.97738531122119
+ },
+ "v1|vision-auto|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 52.74270337404264,
+  "unflagged": 2255,
+  "review": 1.3454771268888428
+ },
+ "v1|vision-auto|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 29.72216239500323,
+  "unflagged": 3135,
+  "review": 3.3598966185655827
+ },
+ "v1|lighton-1b|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 77.00269095425378,
+  "unflagged": 1111,
+  "review": 0.0
+ },
+ "v1|lighton-1b|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 39.54339866465647,
+  "unflagged": 2807,
+  "review": 0.0
+ },
+ "v1|lighton-1b+tesseract|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 89.17408404057132,
+  "unflagged": 45,
+  "review": 30.40778306768785
+ },
+ "v1|lighton-1b+tesseract|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 89.70493215593366,
+  "unflagged": 228,
+  "review": 61.339651087658844
+ },
+ "v1|lighton-1b+vision|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 64.74849927551232,
+  "unflagged": 212,
+  "review": 47.484992755123166
+ },
+ "v1|lighton-1b+vision|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 40.64182640534138,
+  "unflagged": 1782,
+  "review": 36.52810682748223
+ },
+ "v1|lighton-1b+vision-auto|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 52.74270337404264,
+  "unflagged": 298,
+  "review": 52.84620161457255
+ },
+ "v1|lighton-1b+vision-auto|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 29.72216239500323,
+  "unflagged": 2303,
+  "review": 27.43915571828559
+ },
+ "v2|tesseract|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 90.29186503829435,
+  "unflagged": 383,
+  "review": 7.555371558683502
+ },
+ "v2|tesseract|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 89.5757053629119,
+  "unflagged": 377,
+  "review": 25.866896403187596
+ },
+ "v2|vision|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 69.77851376526598,
+  "unflagged": 1305,
+  "review": 29.828192920720348
+ },
+ "v2|vision|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 43.37712685763515,
+  "unflagged": 2395,
+  "review": 29.571397803144517
+ },
+ "v2|vision-auto|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 65.4729869592217,
+  "unflagged": 1655,
+  "review": 0.7451873318153591
+ },
+ "v2|vision-auto|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 34.05125996123196,
+  "unflagged": 3008,
+  "review": 1.5291837174240792
+ },
+ "v2|lighton-1b|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 77.00269095425378,
+  "unflagged": 1111,
+  "review": 0.0
+ },
+ "v2|lighton-1b|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 39.54339866465647,
+  "unflagged": 2807,
+  "review": 0.0
+ },
+ "v2|lighton-1b+tesseract|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 90.29186503829435,
+  "unflagged": 5,
+  "review": 30.014489753674187
+ },
+ "v2|lighton-1b+tesseract|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 89.5757053629119,
+  "unflagged": 250,
+  "review": 59.85354296790868
+ },
+ "v2|lighton-1b+vision|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 69.77851376526598,
+  "unflagged": 42,
+  "review": 45.51852618505485
+ },
+ "v2|lighton-1b+vision|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 43.37712685763515,
+  "unflagged": 1899,
+  "review": 30.28214516476416
+ },
+ "v2|lighton-1b+vision-auto|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 65.4729869592217,
+  "unflagged": 211,
+  "review": 46.553508590353964
+ },
+ "v2|lighton-1b+vision-auto|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 34.05125996123196,
+  "unflagged": 2314,
+  "review": 23.066982554382943
+ },
+ "v3|tesseract|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 90.29186503829435,
+  "unflagged": 382,
+  "review": 8.962947629890293
+ },
+ "v3|tesseract|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 89.5757053629119,
+  "unflagged": 377,
+  "review": 27.84837389618781
+ },
+ "v3|vision|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 69.77851376526598,
+  "unflagged": 1304,
+  "review": 30.552680604429725
+ },
+ "v3|vision|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 43.37712685763515,
+  "unflagged": 2395,
+  "review": 30.411371957785914
+ },
+ "v3|vision-auto|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 65.4729869592217,
+  "unflagged": 1609,
+  "review": 2.3390602359759884
+ },
+ "v3|vision-auto|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 34.05125996123196,
+  "unflagged": 2990,
+  "review": 3.6183502046090887
+ },
+ "v3|lighton-1b|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 77.00269095425378,
+  "unflagged": 14,
+  "review": 55.95114883046988
+ },
+ "v3|lighton-1b|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 39.54339866465647,
+  "unflagged": 12,
+  "review": 75.8130519060952
+ },
+ "v3|lighton-1b+tesseract|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 90.29186503829435,
+  "unflagged": 0,
+  "review": 61.560753467191056
+ },
+ "v3|lighton-1b+tesseract|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 89.5757053629119,
+  "unflagged": 0,
+  "review": 80.4221408572044
+ },
+ "v3|lighton-1b+vision|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 69.77851376526598,
+  "unflagged": 3,
+  "review": 67.5636514179259
+ },
+ "v3|lighton-1b+vision|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 43.37712685763515,
+  "unflagged": 0,
+  "review": 79.81908248976954
+ },
+ "v3|lighton-1b+vision-auto|dev": {
+  "pages": 31,
+  "numbers": 4831,
+  "exact": 65.4729869592217,
+  "unflagged": 134,
+  "review": 68.88842889670876
+ },
+ "v3|lighton-1b+vision-auto|test": {
+  "pages": 19,
+  "numbers": 4643,
+  "exact": 34.05125996123196,
+  "unflagged": 53,
+  "review": 79.77600689209562
+ }
+}

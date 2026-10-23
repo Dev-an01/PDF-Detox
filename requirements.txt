@@ -1,0 +1,7 @@
+pymupdf==2.0
+apted==1.0.3
+torch==2.14.1
+torchvision==0.29.1
+transformers==5.5.4  # 5.20.2 silently mis-loads LightOnOCR-3-1B (random LM weights)
+pillow==13.0.0
+pypdfium2==5.14.0

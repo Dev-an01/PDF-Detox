@@ -1,0 +1,473 @@
+{
+ "tesseract": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 90.22,
+   "page_median_exact_pct": 91.45,
+   "wrong": 48,
+   "wrong_unflagged": 35,
+   "missing": 18,
+   "review_pct": 8.35,
+   "pages_with_review_pct": 100.0,
+   "sec_per_page_mean": 1.33,
+   "sec_per_page_p90": 2.4
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 67.3,
+   "page_median_exact_pct": 90.71,
+   "wrong": 155,
+   "wrong_unflagged": 145,
+   "missing": 139,
+   "review_pct": 12.24,
+   "pages_with_review_pct": 66.7,
+   "sec_per_page_mean": 4.38,
+   "sec_per_page_p90": 4.29
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 89.39,
+   "page_median_exact_pct": 92.87,
+   "wrong": 953,
+   "wrong_unflagged": 678,
+   "missing": 541,
+   "review_pct": 18.1,
+   "pages_with_review_pct": 95.0,
+   "sec_per_page_mean": 8.59,
+   "sec_per_page_p90": 6.46
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 88.38,
+   "page_median_exact_pct": 92.87,
+   "wrong": 1156,
+   "wrong_unflagged": 858,
+   "missing": 698,
+   "review_pct": 17.34,
+   "pages_with_review_pct": 92.9,
+   "sec_per_page_mean": 6.85,
+   "sec_per_page_p90": 6.19,
+   "tau_for_zero": 97.0,
+   "review_pct_at_tau": 91.33,
+   "unflaggable_missing": 698
+  },
+  "memory": {
+   "tesseract": {
+    "engine": "tesseract",
+    "load_seconds": 3.3294782042503357e-07,
+    "peak_rss_self_mb": 613.421875,
+    "peak_rss_child_mb": 617.78125,
+    "peak_mps_driver_mb": null
+   }
+  }
+ },
+ "vision": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 85.13,
+   "page_median_exact_pct": 84.82,
+   "wrong": 73,
+   "wrong_unflagged": 12,
+   "missing": 3,
+   "review_pct": 46.64,
+   "pages_with_review_pct": 100.0,
+   "sec_per_page_mean": 0.41,
+   "sec_per_page_p90": 0.48
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 60.13,
+   "page_median_exact_pct": 87.05,
+   "wrong": 189,
+   "wrong_unflagged": 167,
+   "missing": 147,
+   "review_pct": 25.32,
+   "pages_with_review_pct": 100.0,
+   "sec_per_page_mean": 0.63,
+   "sec_per_page_p90": 0.65
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 51.17,
+   "page_median_exact_pct": 74.57,
+   "wrong": 4386,
+   "wrong_unflagged": 3593,
+   "missing": 3327,
+   "review_pct": 32.35,
+   "pages_with_review_pct": 97.5,
+   "sec_per_page_mean": 0.75,
+   "sec_per_page_p90": 1.18
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 53.28,
+   "page_median_exact_pct": 80.02,
+   "wrong": 4648,
+   "wrong_unflagged": 3772,
+   "missing": 3477,
+   "review_pct": 32.72,
+   "pages_with_review_pct": 98.2,
+   "sec_per_page_mean": 0.68,
+   "sec_per_page_p90": 1.14,
+   "tau_for_zero": 1.001,
+   "review_pct_at_tau": 65.05,
+   "unflaggable_missing": 3477
+  },
+  "memory": {
+   "vision": {
+    "engine": "vision",
+    "load_seconds": 2.919696271419525e-07,
+    "peak_rss_self_mb": 770.953125,
+    "peak_rss_child_mb": 323.625,
+    "peak_mps_driver_mb": null
+   }
+  }
+ },
+ "vision-auto": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 92.26,
+   "page_median_exact_pct": 92.94,
+   "wrong": 38,
+   "wrong_unflagged": 37,
+   "missing": 7,
+   "review_pct": 4.68,
+   "pages_with_review_pct": 40.0,
+   "sec_per_page_mean": 0.36,
+   "sec_per_page_p90": 0.45
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 61.81,
+   "page_median_exact_pct": 90.19,
+   "wrong": 181,
+   "wrong_unflagged": 181,
+   "missing": 144,
+   "review_pct": 0.42,
+   "pages_with_review_pct": 16.7,
+   "sec_per_page_mean": 0.36,
+   "sec_per_page_p90": 0.42
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 38.68,
+   "page_median_exact_pct": 60.5,
+   "wrong": 5508,
+   "wrong_unflagged": 5353,
+   "missing": 4171,
+   "review_pct": 2.2,
+   "pages_with_review_pct": 32.5,
+   "sec_per_page_mean": 0.41,
+   "sec_per_page_p90": 0.56
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 42.43,
+   "page_median_exact_pct": 71.79,
+   "wrong": 5727,
+   "wrong_unflagged": 5571,
+   "missing": 4322,
+   "review_pct": 2.24,
+   "pages_with_review_pct": 32.1,
+   "sec_per_page_mean": 0.4,
+   "sec_per_page_p90": 0.55,
+   "tau_for_zero": 1.001,
+   "review_pct_at_tau": 56.55,
+   "unflaggable_missing": 4322
+  },
+  "memory": {
+   "vision-auto": {
+    "engine": "vision-auto",
+    "load_seconds": 5.41098415851593e-07,
+    "peak_rss_self_mb": 771.84375,
+    "peak_rss_child_mb": 423.890625,
+    "peak_mps_driver_mb": null
+   }
+  }
+ },
+ "lighton-1b": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 100.0,
+   "page_median_exact_pct": 100.0,
+   "wrong": 0,
+   "wrong_unflagged": 0,
+   "missing": 0,
+   "review_pct": 0.0,
+   "pages_with_review_pct": 0.0,
+   "sec_per_page_mean": 70.38,
+   "sec_per_page_p90": 116.7
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 71.52,
+   "page_median_exact_pct": 100.0,
+   "wrong": 135,
+   "wrong_unflagged": 135,
+   "missing": 0,
+   "review_pct": 0.0,
+   "pages_with_review_pct": 0.0,
+   "sec_per_page_mean": 132.24,
+   "sec_per_page_p90": 201.89
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 56.38,
+   "page_median_exact_pct": 100.0,
+   "wrong": 3918,
+   "wrong_unflagged": 3918,
+   "missing": 0,
+   "review_pct": 0.0,
+   "pages_with_review_pct": 0.0,
+   "sec_per_page_mean": 135.72,
+   "sec_per_page_p90": 254.38
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 59.26,
+   "page_median_exact_pct": 100.0,
+   "wrong": 4053,
+   "wrong_unflagged": 4053,
+   "missing": 0,
+   "review_pct": 0.0,
+   "pages_with_review_pct": 0.0,
+   "sec_per_page_mean": 123.68,
+   "sec_per_page_p90": 241.55
+  },
+  "memory": {
+   "lighton-1b": {
+    "engine": "lighton-1b",
+    "load_seconds": 9.549451458267868,
+    "peak_rss_self_mb": 6205.703125,
+    "peak_rss_child_mb": 0.0,
+    "peak_mps_driver_mb": 7826.75
+   }
+  }
+ },
+ "lighton-1b+tesseract": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 90.22,
+   "page_median_exact_pct": 91.45,
+   "wrong": 48,
+   "wrong_unflagged": 13,
+   "missing": 18,
+   "review_pct": 7.13,
+   "pages_with_review_pct": 100.0,
+   "sec_per_page_mean": 71.71,
+   "sec_per_page_p90": 119.1
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 67.3,
+   "page_median_exact_pct": 90.71,
+   "wrong": 155,
+   "wrong_unflagged": 145,
+   "missing": 139,
+   "review_pct": 2.74,
+   "pages_with_review_pct": 50.0,
+   "sec_per_page_mean": 136.62,
+   "sec_per_page_p90": 205.24
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 89.39,
+   "page_median_exact_pct": 92.87,
+   "wrong": 953,
+   "wrong_unflagged": 260,
+   "missing": 541,
+   "review_pct": 47.67,
+   "pages_with_review_pct": 82.5,
+   "sec_per_page_mean": 144.32,
+   "sec_per_page_p90": 261.15
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 88.38,
+   "page_median_exact_pct": 92.87,
+   "wrong": 1156,
+   "wrong_unflagged": 418,
+   "missing": 698,
+   "review_pct": 43.53,
+   "pages_with_review_pct": 82.1,
+   "sec_per_page_mean": 130.53,
+   "sec_per_page_p90": 245.27
+  },
+  "memory": {
+   "lighton-1b": {
+    "engine": "lighton-1b",
+    "load_seconds": 9.549451458267868,
+    "peak_rss_self_mb": 6205.703125,
+    "peak_rss_child_mb": 0.0,
+    "peak_mps_driver_mb": 7826.75
+   },
+   "tesseract": {
+    "engine": "tesseract",
+    "load_seconds": 3.3294782042503357e-07,
+    "peak_rss_self_mb": 613.421875,
+    "peak_rss_child_mb": 617.78125,
+    "peak_mps_driver_mb": null
+   }
+  }
+ },
+ "lighton-1b+vision": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 85.13,
+   "page_median_exact_pct": 84.82,
+   "wrong": 73,
+   "wrong_unflagged": 29,
+   "missing": 3,
+   "review_pct": 11.0,
+   "pages_with_review_pct": 100.0,
+   "sec_per_page_mean": 70.79,
+   "sec_per_page_p90": 117.14
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 60.13,
+   "page_median_exact_pct": 87.05,
+   "wrong": 189,
+   "wrong_unflagged": 175,
+   "missing": 147,
+   "review_pct": 3.38,
+   "pages_with_review_pct": 50.0,
+   "sec_per_page_mean": 132.87,
+   "sec_per_page_p90": 202.53
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 51.17,
+   "page_median_exact_pct": 74.57,
+   "wrong": 4386,
+   "wrong_unflagged": 1965,
+   "missing": 3327,
+   "review_pct": 43.82,
+   "pages_with_review_pct": 97.5,
+   "sec_per_page_mean": 136.48,
+   "sec_per_page_p90": 254.64
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 53.28,
+   "page_median_exact_pct": 80.02,
+   "wrong": 4648,
+   "wrong_unflagged": 2169,
+   "missing": 3477,
+   "review_pct": 40.27,
+   "pages_with_review_pct": 92.9,
+   "sec_per_page_mean": 124.36,
+   "sec_per_page_p90": 242.29
+  },
+  "memory": {
+   "lighton-1b": {
+    "engine": "lighton-1b",
+    "load_seconds": 9.549451458267868,
+    "peak_rss_self_mb": 6205.703125,
+    "peak_rss_child_mb": 0.0,
+    "peak_mps_driver_mb": 7826.75
+   },
+   "vision": {
+    "engine": "vision",
+    "load_seconds": 2.919696271419525e-07,
+    "peak_rss_self_mb": 770.953125,
+    "peak_rss_child_mb": 323.625,
+    "peak_mps_driver_mb": null
+   }
+  }
+ },
+ "lighton-1b+vision-auto": {
+  "gold_ocr": {
+   "pages": 10,
+   "numbers": 491,
+   "exact_pct": 92.26,
+   "page_median_exact_pct": 92.94,
+   "wrong": 38,
+   "wrong_unflagged": 7,
+   "missing": 7,
+   "review_pct": 6.31,
+   "pages_with_review_pct": 80.0,
+   "sec_per_page_mean": 70.74,
+   "sec_per_page_p90": 117.12
+  },
+  "pb_notext": {
+   "pages": 6,
+   "numbers": 474,
+   "exact_pct": 61.81,
+   "page_median_exact_pct": 90.19,
+   "wrong": 181,
+   "wrong_unflagged": 172,
+   "missing": 144,
+   "review_pct": 2.32,
+   "pages_with_review_pct": 50.0,
+   "sec_per_page_mean": 132.6,
+   "sec_per_page_p90": 202.31
+  },
+  "real_render": {
+   "pages": 40,
+   "numbers": 8983,
+   "exact_pct": 38.68,
+   "page_median_exact_pct": 60.5,
+   "wrong": 5508,
+   "wrong_unflagged": 2594,
+   "missing": 4171,
+   "review_pct": 42.26,
+   "pages_with_review_pct": 90.0,
+   "sec_per_page_mean": 136.13,
+   "sec_per_page_p90": 254.59
+  },
+  "ALL": {
+   "pages": 56,
+   "numbers": 9948,
+   "exact_pct": 42.43,
+   "page_median_exact_pct": 71.79,
+   "wrong": 5727,
+   "wrong_unflagged": 2773,
+   "missing": 4322,
+   "review_pct": 38.58,
+   "pages_with_review_pct": 83.9,
+   "sec_per_page_mean": 124.08,
+   "sec_per_page_p90": 242.08
+  },
+  "memory": {
+   "lighton-1b": {
+    "engine": "lighton-1b",
+    "load_seconds": 9.549451458267868,
+    "peak_rss_self_mb": 6205.703125,
+    "peak_rss_child_mb": 0.0,
+    "peak_mps_driver_mb": 7826.75
+   },
+   "vision-auto": {
+    "engine": "vision-auto",
+    "load_seconds": 5.41098415851593e-07,
+    "peak_rss_self_mb": 771.84375,
+    "peak_rss_child_mb": 423.890625,
+    "peak_mps_driver_mb": null
+   }
+  }
+ }
+}

@@ -1,0 +1,1463 @@
+{
+ "doc_id": "syn_ja_bs_borderless_footnotes",
+ "source_file": "gold/pdf/syn_ja_bs_borderless_footnotes.pdf",
+ "tags": [
+  "synthetic",
+  "ja",
+  "financial",
+  "borderless",
+  "footnotes",
+  "blanks",
+  "text_layer"
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.0,
+   "height": 842.0,
+   "rotation": 0,
+   "text_source": "text_layer"
+  }
+ ],
+ "tables": [
+  {
+   "table_id": "t1",
+   "title": "連結貸借対照表",
+   "title_bbox": [
+    50.0,
+    59.53,
+    127.0,
+    73.92
+   ],
+   "unit": {
+    "raw_text": "（単位：千円）",
+    "scale": 1000,
+    "currency": "JPY"
+   },
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      545.0,
+      372.0
+     ]
+    }
+   ],
+   "n_rows": 20,
+   "n_cols": 3,
+   "header_rows": 2,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "前連結会計年度",
+      "(2025年３月31日)"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "当連結会計年度",
+      "(2026年３月31日)"
+     ],
+     "role": "value"
+    }
+   ],
+   "rows": [
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 7,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 8,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 9,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 10,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 11,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": true
+    },
+    {
+     "row": 12,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 13,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": false
+    },
+    {
+     "row": 14,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": false
+    },
+    {
+     "row": 15,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": false
+    },
+    {
+     "row": 16,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": false
+    },
+    {
+     "row": 17,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": false
+    },
+    {
+     "row": 18,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": false
+    },
+    {
+     "row": 19,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 12,
+     "is_total": true
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      305.0,
+      106.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      335.25,
+      93.11,
+      394.75,
+      104.23
+     ],
+     "raw_text": "前連結会計年度",
+     "text": "前連結会計年度",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      455.25,
+      93.11,
+      514.75,
+      104.23
+     ],
+     "raw_text": "当連結会計年度",
+     "text": "当連結会計年度",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      50.0,
+      106.0,
+      305.0,
+      120.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      331.4,
+      107.11,
+      398.6,
+      118.23
+     ],
+     "raw_text": "(2025年３月31日)",
+     "text": "(2025年３月31日)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      451.4,
+      107.11,
+      518.6,
+      118.23
+     ],
+     "raw_text": "(2026年３月31日)",
+     "text": "(2026年３月31日)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      121.11,
+      88.0,
+      132.23
+     ],
+     "raw_text": "流動負債",
+     "text": "流動負債",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      305.0,
+      120.0,
+      425.0,
+      134.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      425.0,
+      120.0,
+      545.0,
+      134.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      135.11,
+      142.5,
+      146.23
+     ],
+     "raw_text": "支払手形及び買掛金",
+     "text": "支払手形及び買掛金",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.98,
+      135.11,
+      421.0,
+      146.23
+     ],
+     "raw_text": "5,848,475",
+     "text": "5,848,475",
+     "value": "5848475",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      135.11,
+      541.0,
+      146.23
+     ],
+     "raw_text": "2,808,490",
+     "text": "2,808,490",
+     "value": "2808490",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      149.11,
+      119.12,
+      160.23
+     ],
+     "raw_text": "短期借入金※1",
+     "text": "短期借入金※1",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": [
+      "※1"
+     ]
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      412.5,
+      149.11,
+      421.0,
+      160.23
+     ],
+     "raw_text": "－",
+     "text": "-",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      149.11,
+      541.0,
+      160.23
+     ],
+     "raw_text": "2,559,582",
+     "text": "2,559,582",
+     "value": "2559582",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      163.11,
+      176.5,
+      174.23
+     ],
+     "raw_text": "１年内返済予定の長期借入金",
+     "text": "1年内返済予定の長期借入金",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.98,
+      163.11,
+      421.0,
+      174.23
+     ],
+     "raw_text": "5,101,115",
+     "text": "5,101,115",
+     "value": "5101115",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      163.11,
+      541.0,
+      174.23
+     ],
+     "raw_text": "35,224",
+     "text": "35,224",
+     "value": "35224",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      177.11,
+      91.5,
+      188.23
+     ],
+     "raw_text": "未払金",
+     "text": "未払金",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.98,
+      177.11,
+      421.0,
+      188.23
+     ],
+     "raw_text": "9,035,417",
+     "text": "9,035,417",
+     "value": "9035417",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      177.11,
+      541.0,
+      188.23
+     ],
+     "raw_text": "3,842,018",
+     "text": "3,842,018",
+     "value": "3842018",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      191.11,
+      127.62,
+      202.23
+     ],
+     "raw_text": "未払法人税等※2",
+     "text": "未払法人税等※2",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": [
+      "※2"
+     ]
+    },
+    {
+     "row": 7,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.47,
+      191.11,
+      421.0,
+      202.23
+     ],
+     "raw_text": "26,578",
+     "text": "26,578",
+     "value": "26578",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      191.11,
+      541.0,
+      202.23
+     ],
+     "raw_text": "27,203",
+     "text": "27,203",
+     "value": "27203",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      205.11,
+      108.5,
+      216.23
+     ],
+     "raw_text": "賞与引当金",
+     "text": "賞与引当金",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      400.15,
+      205.11,
+      421.0,
+      216.23
+     ],
+     "raw_text": "4,661",
+     "text": "4,661",
+     "value": "4661",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      205.11,
+      541.0,
+      216.23
+     ],
+     "raw_text": "80,316",
+     "text": "80,316",
+     "value": "80316",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      219.11,
+      100.0,
+      230.23
+     ],
+     "raw_text": "契約負債",
+     "text": "契約負債",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.96,
+      219.11,
+      421.0,
+      230.23
+     ],
+     "raw_text": "741",
+     "text": "741",
+     "value": "741",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      219.11,
+      541.0,
+      230.23
+     ],
+     "raw_text": "62,614",
+     "text": "62,614",
+     "value": "62614",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 10,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      233.11,
+      91.5,
+      244.23
+     ],
+     "raw_text": "その他",
+     "text": "その他",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 10,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.47,
+      233.11,
+      421.0,
+      244.23
+     ],
+     "raw_text": "80,988",
+     "text": "80,988",
+     "value": "80988",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 10,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      233.11,
+      541.0,
+      244.23
+     ],
+     "raw_text": "1,522,346",
+     "text": "1,522,346",
+     "value": "1522346",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 11,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      247.11,
+      117.0,
+      258.23
+     ],
+     "raw_text": "流動負債合計",
+     "text": "流動負債合計",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 11,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      379.3,
+      247.11,
+      421.0,
+      258.23
+     ],
+     "raw_text": "20,097,975",
+     "text": "20,097,975",
+     "value": "20097975",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 11,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      499.3,
+      247.11,
+      541.0,
+      258.23
+     ],
+     "raw_text": "10,937,793",
+     "text": "10,937,793",
+     "value": "10937793",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 12,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      261.11,
+      88.0,
+      272.23
+     ],
+     "raw_text": "固定負債",
+     "text": "固定負債",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 12,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      305.0,
+      260.0,
+      425.0,
+      274.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 12,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      425.0,
+      260.0,
+      545.0,
+      274.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 13,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      275.11,
+      108.5,
+      286.23
+     ],
+     "raw_text": "長期借入金",
+     "text": "長期借入金",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 13,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.47,
+      275.11,
+      421.0,
+      286.23
+     ],
+     "raw_text": "94,256",
+     "text": "94,256",
+     "value": "94256",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 13,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.96,
+      275.11,
+      541.0,
+      286.23
+     ],
+     "raw_text": "445",
+     "text": "445",
+     "value": "445",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 14,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      289.11,
+      119.12,
+      300.23
+     ],
+     "raw_text": "リース債務※3",
+     "text": "リース債務※3",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": [
+      "※3"
+     ]
+    },
+    {
+     "row": 14,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.47,
+      289.11,
+      421.0,
+      300.23
+     ],
+     "raw_text": "95,611",
+     "text": "95,611",
+     "value": "95611",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 14,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.96,
+      289.11,
+      541.0,
+      300.23
+     ],
+     "raw_text": "970",
+     "text": "970",
+     "value": "970",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 15,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      303.11,
+      142.5,
+      314.23
+     ],
+     "raw_text": "退職給付に係る負債",
+     "text": "退職給付に係る負債",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 15,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.98,
+      303.11,
+      421.0,
+      314.23
+     ],
+     "raw_text": "7,907,342",
+     "text": "7,907,342",
+     "value": "7907342",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 15,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      303.11,
+      541.0,
+      314.23
+     ],
+     "raw_text": "8,058,388",
+     "text": "8,058,388",
+     "value": "8058388",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 16,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      317.11,
+      117.0,
+      328.23
+     ],
+     "raw_text": "資産除去債務",
+     "text": "資産除去債務",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 16,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.96,
+      317.11,
+      421.0,
+      328.23
+     ],
+     "raw_text": "160",
+     "text": "160",
+     "value": "160",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 16,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      532.5,
+      317.11,
+      541.0,
+      328.23
+     ],
+     "raw_text": "－",
+     "text": "-",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 17,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      331.11,
+      127.62,
+      342.23
+     ],
+     "raw_text": "繰延税金負債※4",
+     "text": "繰延税金負債※4",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": [
+      "※4"
+     ]
+    },
+    {
+     "row": 17,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.98,
+      331.11,
+      421.0,
+      342.23
+     ],
+     "raw_text": "1,824,228",
+     "text": "1,824,228",
+     "value": "1824228",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 17,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.96,
+      331.11,
+      541.0,
+      342.23
+     ],
+     "raw_text": "143",
+     "text": "143",
+     "value": "143",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 18,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      345.11,
+      91.5,
+      356.23
+     ],
+     "raw_text": "その他",
+     "text": "その他",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 18,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      412.5,
+      345.11,
+      421.0,
+      356.23
+     ],
+     "raw_text": "－",
+     "text": "-",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 18,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      345.11,
+      541.0,
+      356.23
+     ],
+     "raw_text": "32,527",
+     "text": "32,527",
+     "value": "32527",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 19,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      359.11,
+      117.0,
+      370.23
+     ],
+     "raw_text": "固定負債合計",
+     "text": "固定負債合計",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 19,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.98,
+      359.11,
+      421.0,
+      370.23
+     ],
+     "raw_text": "9,921,597",
+     "text": "9,921,597",
+     "value": "9921597",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 19,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      359.11,
+      541.0,
+      370.23
+     ],
+     "raw_text": "8,092,473",
+     "text": "8,092,473",
+     "value": "8092473",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [
+    {
+     "marker": "※1",
+     "raw_text": "※1 短期借入金は担保に供している資産であります。",
+     "page": 1,
+     "bbox": [
+      50.0,
+      378.13,
+      249.85,
+      389.26
+     ]
+    },
+    {
+     "marker": "※2",
+     "raw_text": "※2 未払法人税等は担保に供している資産であります。",
+     "page": 1,
+     "bbox": [
+      50.0,
+      390.13,
+      258.35,
+      401.26
+     ]
+    },
+    {
+     "marker": "※3",
+     "raw_text": "※3 リース債務は担保に供している資産であります。",
+     "page": 1,
+     "bbox": [
+      50.0,
+      402.13,
+      249.85,
+      413.26
+     ]
+    },
+    {
+     "marker": "※4",
+     "raw_text": "※4 繰延税金負債は担保に供している資産であります。",
+     "page": 1,
+     "bbox": [
+      50.0,
+      414.13,
+      258.35,
+      425.26
+     ]
+    }
+   ],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  }
+ ]
+}

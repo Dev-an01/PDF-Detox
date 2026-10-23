@@ -1,0 +1,1811 @@
+{
+ "doc_id": "syn_en_bs_striped_hierarchy_ocr",
+ "source_file": "gold/pdf/syn_en_bs_striped_hierarchy_ocr.pdf",
+ "tags": [
+  "synthetic",
+  "en",
+  "financial",
+  "striped",
+  "hierarchy",
+  "ocr"
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.0,
+   "height": 842.0,
+   "rotation": 0,
+   "text_source": "ocr"
+  }
+ ],
+ "tables": [
+  {
+   "table_id": "t1",
+   "title": "Consolidated Balance Sheet",
+   "title_bbox": [
+    50.0,
+    59.17,
+    188.8,
+    74.29
+   ],
+   "unit": {
+    "raw_text": "(In thousands of U.S. dollars)",
+    "scale": 1000,
+    "currency": "USD"
+   },
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      545.0,
+      456.0
+     ]
+    }
+   ],
+   "n_rows": 26,
+   "n_cols": 3,
+   "header_rows": 2,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "Prior year",
+      "(March 31, 2025)"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "Current year",
+      "(March 31, 2026)"
+     ],
+     "role": "value"
+    }
+   ],
+   "rows": [
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 7,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 8,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 9,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 10,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 11,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": false
+    },
+    {
+     "row": 12,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 3,
+     "is_total": true
+    },
+    {
+     "row": 13,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": false
+    },
+    {
+     "row": 14,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 15,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 16,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 17,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 18,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 19,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 20,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 21,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 22,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 23,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": false
+    },
+    {
+     "row": 24,
+     "page": 1,
+     "indent_level": 2,
+     "parent_row": 13,
+     "is_total": true
+    },
+    {
+     "row": 25,
+     "page": 1,
+     "indent_level": 1,
+     "parent_row": 2,
+     "is_total": true
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      305.0,
+      106.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      346.58,
+      92.84,
+      383.42,
+      104.52
+     ],
+     "raw_text": "Prior year",
+     "text": "Prior year",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      461.38,
+      92.84,
+      508.62,
+      104.52
+     ],
+     "raw_text": "Current year",
+     "text": "Current year",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      50.0,
+      106.0,
+      305.0,
+      120.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      332.64,
+      106.84,
+      397.36,
+      118.52
+     ],
+     "raw_text": "(March 31, 2025)",
+     "text": "(March 31, 2025)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      452.64,
+      106.84,
+      517.36,
+      118.52
+     ],
+     "raw_text": "(March 31, 2026)",
+     "text": "(March 31, 2026)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      120.84,
+      79.51,
+      132.52
+     ],
+     "raw_text": "Assets",
+     "text": "Assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      305.0,
+      120.0,
+      425.0,
+      134.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      425.0,
+      120.0,
+      545.0,
+      134.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      134.84,
+      121.27,
+      146.52
+     ],
+     "raw_text": "Current assets",
+     "text": "Current assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      305.0,
+      134.0,
+      425.0,
+      148.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      425.0,
+      134.0,
+      545.0,
+      148.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      148.84,
+      180.05,
+      160.52
+     ],
+     "raw_text": "Cash and cash equivalents",
+     "text": "Cash and cash equivalents",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.01,
+      148.84,
+      421.0,
+      160.52
+     ],
+     "raw_text": "85,534",
+     "text": "85,534",
+     "value": "85534",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      148.84,
+      541.0,
+      160.52
+     ],
+     "raw_text": "8,783,593",
+     "text": "8,783,593",
+     "value": "8783593",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      162.84,
+      145.55,
+      174.52
+     ],
+     "raw_text": "Trade receivables",
+     "text": "Trade receivables",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.82,
+      162.84,
+      421.0,
+      174.52
+     ],
+     "raw_text": "170",
+     "text": "170",
+     "value": "170",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.82,
+      162.84,
+      541.0,
+      174.52
+     ],
+     "raw_text": "416",
+     "text": "416",
+     "value": "416",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      176.84,
+      137.05,
+      188.52
+     ],
+     "raw_text": "Contract assets",
+     "text": "Contract assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      412.5,
+      176.84,
+      421.0,
+      188.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      176.84,
+      541.0,
+      188.52
+     ],
+     "raw_text": "9,342,953",
+     "text": "9,342,953",
+     "value": "9342953",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      190.84,
+      119.57,
+      202.52
+     ],
+     "raw_text": "Inventories",
+     "text": "Inventories",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.19,
+      190.84,
+      421.0,
+      202.52
+     ],
+     "raw_text": "3,447,361",
+     "text": "3,447,361",
+     "value": "3447361",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      190.84,
+      541.0,
+      202.52
+     ],
+     "raw_text": "7,066,646",
+     "text": "7,066,646",
+     "value": "7066646",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      204.84,
+      146.03,
+      216.52
+     ],
+     "raw_text": "Prepaid expenses",
+     "text": "Prepaid expenses",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.19,
+      204.84,
+      421.0,
+      216.52
+     ],
+     "raw_text": "5,137,630",
+     "text": "5,137,630",
+     "value": "5137630",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      532.5,
+      204.84,
+      541.0,
+      216.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      218.84,
+      165.86,
+      230.52
+     ],
+     "raw_text": "Short-term investments",
+     "text": "Short-term investments",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.82,
+      218.84,
+      421.0,
+      230.52
+     ],
+     "raw_text": "802",
+     "text": "802",
+     "value": "802",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.82,
+      218.84,
+      541.0,
+      230.52
+     ],
+     "raw_text": "448",
+     "text": "448",
+     "value": "448",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 10,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      232.84,
+      155.0,
+      244.52
+     ],
+     "raw_text": "Other current assets",
+     "text": "Other current assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 10,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.82,
+      232.84,
+      421.0,
+      244.52
+     ],
+     "raw_text": "464",
+     "text": "464",
+     "value": "464",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 10,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      519.73,
+      232.84,
+      541.0,
+      244.52
+     ],
+     "raw_text": "6,087",
+     "text": "6,087",
+     "value": "6087",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 11,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      246.84,
+      198.0,
+      258.52
+     ],
+     "raw_text": "Allowance for doubtful accounts",
+     "text": "Allowance for doubtful accounts",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 11,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      389.35,
+      246.84,
+      421.0,
+      258.52
+     ],
+     "raw_text": "(98,259)",
+     "text": "(98,259)",
+     "value": "-98259",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 11,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      530.61,
+      246.84,
+      541.0,
+      258.52
+     ],
+     "raw_text": "(0)",
+     "text": "(0)",
+     "value": "0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 12,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      260.84,
+      152.64,
+      272.52
+     ],
+     "raw_text": "Total current assets",
+     "text": "Total current assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 12,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.19,
+      260.84,
+      421.0,
+      272.52
+     ],
+     "raw_text": "8,573,702",
+     "text": "8,573,702",
+     "value": "8573702",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 12,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      498.47,
+      260.84,
+      541.0,
+      272.52
+     ],
+     "raw_text": "25,200,143",
+     "text": "25,200,143",
+     "value": "25200143",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 13,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      274.84,
+      137.8,
+      286.52
+     ],
+     "raw_text": "Non-current assets",
+     "text": "Non-current assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 13,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      305.0,
+      274.0,
+      425.0,
+      288.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 13,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      425.0,
+      274.0,
+      545.0,
+      288.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 14,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      288.84,
+      168.7,
+      300.52
+     ],
+     "raw_text": "Buildings and structures",
+     "text": "Buildings and structures",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 14,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.01,
+      288.84,
+      421.0,
+      300.52
+     ],
+     "raw_text": "35,511",
+     "text": "35,511",
+     "value": "35511",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 14,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.01,
+      288.84,
+      541.0,
+      300.52
+     ],
+     "raw_text": "58,154",
+     "text": "58,154",
+     "value": "58154",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 15,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      302.84,
+      175.79,
+      314.52
+     ],
+     "raw_text": "Machinery and equipment",
+     "text": "Machinery and equipment",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 15,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.19,
+      302.84,
+      421.0,
+      314.52
+     ],
+     "raw_text": "1,533,128",
+     "text": "1,533,128",
+     "value": "1533128",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 15,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      532.5,
+      302.84,
+      541.0,
+      314.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 16,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      316.84,
+      96.9,
+      328.52
+     ],
+     "raw_text": "Land",
+     "text": "Land",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 16,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.82,
+      316.84,
+      421.0,
+      328.52
+     ],
+     "raw_text": "242",
+     "text": "242",
+     "value": "242",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 16,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.01,
+      316.84,
+      541.0,
+      328.52
+     ],
+     "raw_text": "26,157",
+     "text": "26,157",
+     "value": "26157",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 17,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      330.84,
+      151.22,
+      342.52
+     ],
+     "raw_text": "Right-of-use assets",
+     "text": "Right-of-use assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 17,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.01,
+      330.84,
+      421.0,
+      342.52
+     ],
+     "raw_text": "83,666",
+     "text": "83,666",
+     "value": "83666",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 17,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.82,
+      330.84,
+      541.0,
+      342.52
+     ],
+     "raw_text": "544",
+     "text": "544",
+     "value": "544",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 18,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      344.84,
+      170.11,
+      356.52
+     ],
+     "raw_text": "Construction in progress",
+     "text": "Construction in progress",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 18,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      395.01,
+      344.84,
+      421.0,
+      356.52
+     ],
+     "raw_text": "31,648",
+     "text": "31,648",
+     "value": "31648",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 18,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.82,
+      344.84,
+      541.0,
+      356.52
+     ],
+     "raw_text": "401",
+     "text": "401",
+     "value": "401",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 19,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      358.84,
+      110.59,
+      370.52
+     ],
+     "raw_text": "Goodwill",
+     "text": "Goodwill",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 19,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      406.82,
+      358.84,
+      421.0,
+      370.52
+     ],
+     "raw_text": "176",
+     "text": "176",
+     "value": "176",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 19,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.82,
+      358.84,
+      541.0,
+      370.52
+     ],
+     "raw_text": "637",
+     "text": "637",
+     "value": "637",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 20,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      372.84,
+      141.78,
+      384.52
+     ],
+     "raw_text": "Intangible assets",
+     "text": "Intangible assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 20,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.19,
+      372.84,
+      421.0,
+      384.52
+     ],
+     "raw_text": "2,422,003",
+     "text": "2,422,003",
+     "value": "2422003",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 20,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      372.84,
+      541.0,
+      384.52
+     ],
+     "raw_text": "1,237,959",
+     "text": "1,237,959",
+     "value": "1237959",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 21,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      386.84,
+      157.83,
+      398.52
+     ],
+     "raw_text": "Investment securities",
+     "text": "Investment securities",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 21,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      412.5,
+      386.84,
+      421.0,
+      398.52
+     ],
+     "raw_text": "—",
+     "text": "—",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "dash",
+     "footnote_refs": []
+    },
+    {
+     "row": 21,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      386.84,
+      541.0,
+      398.52
+     ],
+     "raw_text": "3,443,903",
+     "text": "3,443,903",
+     "value": "3443903",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 22,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      400.84,
+      151.69,
+      412.52
+     ],
+     "raw_text": "Deferred tax assets",
+     "text": "Deferred tax assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 22,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      411.55,
+      400.84,
+      421.0,
+      412.52
+     ],
+     "raw_text": "68",
+     "text": "68",
+     "value": "68",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 22,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      526.82,
+      400.84,
+      541.0,
+      412.52
+     ],
+     "raw_text": "209",
+     "text": "209",
+     "value": "209",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 23,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      414.84,
+      175.79,
+      426.52
+     ],
+     "raw_text": "Accumulated depreciation",
+     "text": "Accumulated depreciation",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 23,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      389.35,
+      414.84,
+      421.0,
+      426.52
+     ],
+     "raw_text": "(98,797)",
+     "text": "(98,797)",
+     "value": "-98797",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 23,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      530.61,
+      414.84,
+      541.0,
+      426.52
+     ],
+     "raw_text": "(0)",
+     "text": "(0)",
+     "value": "0",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 24,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      78.0,
+      428.84,
+      169.65,
+      440.52
+     ],
+     "raw_text": "Total non-current assets",
+     "text": "Total non-current assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 24,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      383.19,
+      428.84,
+      421.0,
+      440.52
+     ],
+     "raw_text": "4,007,645",
+     "text": "4,007,645",
+     "value": "4007645",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 24,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.19,
+      428.84,
+      541.0,
+      440.52
+     ],
+     "raw_text": "4,767,964",
+     "text": "4,767,964",
+     "value": "4767964",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 25,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      66.0,
+      442.84,
+      111.82,
+      454.52
+     ],
+     "raw_text": "Total assets",
+     "text": "Total assets",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 25,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      378.47,
+      442.84,
+      421.0,
+      454.52
+     ],
+     "raw_text": "12,581,347",
+     "text": "12,581,347",
+     "value": "12581347",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 25,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      498.47,
+      442.84,
+      541.0,
+      454.52
+     ],
+     "raw_text": "29,968,107",
+     "text": "29,968,107",
+     "value": "29968107",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  }
+ ]
+}

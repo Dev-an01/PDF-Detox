@@ -1,0 +1,953 @@
+{
+ "doc_id": "syn_ja_bill_ruled_wrapped_ocr",
+ "source_file": "gold/pdf/syn_ja_bill_ruled_wrapped_ocr.pdf",
+ "tags": [
+  "synthetic",
+  "ja",
+  "bill",
+  "ruled",
+  "wrapped_label",
+  "ocr"
+ ],
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.0,
+   "height": 842.0,
+   "rotation": 0,
+   "text_source": "ocr"
+  }
+ ],
+ "tables": [
+  {
+   "table_id": "t1",
+   "title": "請求明細書",
+   "title_bbox": [
+    50.0,
+    59.53,
+    105.0,
+    73.92
+   ],
+   "unit": {
+    "raw_text": "（単位：円）",
+    "scale": 1,
+    "currency": "JPY"
+   },
+   "regions": [
+    {
+     "page": 1,
+     "bbox": [
+      50.0,
+      92.0,
+      545.0,
+      246.0
+     ]
+    }
+   ],
+   "n_rows": 10,
+   "n_cols": 4,
+   "header_rows": 1,
+   "columns": [
+    {
+     "col": 0,
+     "header_path": [
+      "品名"
+     ],
+     "role": "label"
+    },
+    {
+     "col": 1,
+     "header_path": [
+      "数量"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 2,
+     "header_path": [
+      "単価"
+     ],
+     "role": "value"
+    },
+    {
+     "col": 3,
+     "header_path": [
+      "金額"
+     ],
+     "role": "value"
+    }
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 2,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 3,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 4,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 5,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 6,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 7,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 8,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": false
+    },
+    {
+     "row": 9,
+     "page": 1,
+     "indent_level": 0,
+     "parent_row": null,
+     "is_total": true
+    }
+   ],
+   "cells": [
+    {
+     "row": 0,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      159.0,
+      93.11,
+      176.0,
+      104.23
+     ],
+     "raw_text": "品名",
+     "text": "品名",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      306.5,
+      93.11,
+      323.5,
+      104.23
+     ],
+     "raw_text": "数量",
+     "text": "数量",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      386.5,
+      93.11,
+      403.5,
+      104.23
+     ],
+     "raw_text": "単価",
+     "text": "単価",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 0,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": true,
+     "page": 1,
+     "bbox": [
+      486.5,
+      93.11,
+      503.5,
+      104.23
+     ],
+     "raw_text": "金額",
+     "text": "金額",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      107.11,
+      105.0,
+      118.23
+     ],
+     "raw_text": "事務用品一式",
+     "text": "事務用品一式",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      107.11,
+      341.0,
+      118.23
+     ],
+     "raw_text": "5",
+     "text": "5",
+     "value": "5",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      107.11,
+      441.0,
+      118.23
+     ],
+     "raw_text": "95,413",
+     "text": "95,413",
+     "value": "95413",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 1,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      107.11,
+      541.0,
+      118.23
+     ],
+     "raw_text": "477,065",
+     "text": "477,065",
+     "value": "477065",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      121.11,
+      186.18,
+      132.23
+     ],
+     "raw_text": "コピー用紙Ａ４（５００枚×５冊）",
+     "text": "コピー用紙A4(500枚×5冊)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      121.11,
+      341.0,
+      132.23
+     ],
+     "raw_text": "3",
+     "text": "3",
+     "value": "3",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      121.11,
+      441.0,
+      132.23
+     ],
+     "raw_text": "54,649",
+     "text": "54,649",
+     "value": "54649",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 2,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      121.11,
+      541.0,
+      132.23
+     ],
+     "raw_text": "163,947",
+     "text": "163,947",
+     "value": "163947",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      135.11,
+      130.5,
+      146.23
+     ],
+     "raw_text": "トナーカートリッジ",
+     "text": "トナーカートリッジ",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      135.11,
+      341.0,
+      146.23
+     ],
+     "raw_text": "6",
+     "text": "6",
+     "value": "6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      135.11,
+      441.0,
+      146.23
+     ],
+     "raw_text": "49,396",
+     "text": "49,396",
+     "value": "49396",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 3,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      135.11,
+      541.0,
+      146.23
+     ],
+     "raw_text": "296,376",
+     "text": "296,376",
+     "value": "296376",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      149.11,
+      79.5,
+      160.23
+     ],
+     "raw_text": "配送料",
+     "text": "配送料",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      149.11,
+      341.0,
+      160.23
+     ],
+     "raw_text": "6",
+     "text": "6",
+     "value": "6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      149.11,
+      441.0,
+      160.23
+     ],
+     "raw_text": "15,947",
+     "text": "15,947",
+     "value": "15947",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 4,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      515.47,
+      149.11,
+      541.0,
+      160.23
+     ],
+     "raw_text": "95,682",
+     "text": "95,682",
+     "value": "95682",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      163.11,
+      207.0,
+      188.23
+     ],
+     "raw_text": "ノートパソコン保守契約（年間・オンサイト対応含む）",
+     "text": "ノートパソコン保守契約(年間・オンサイト対応含む)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      177.11,
+      341.0,
+      188.23
+     ],
+     "raw_text": "6",
+     "text": "6",
+     "value": "6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      426.96,
+      177.11,
+      441.0,
+      188.23
+     ],
+     "raw_text": "328",
+     "text": "328",
+     "value": "328",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 5,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      520.15,
+      177.11,
+      541.0,
+      188.23
+     ],
+     "raw_text": "1,968",
+     "text": "1,968",
+     "value": "1968",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      191.11,
+      105.0,
+      202.23
+     ],
+     "raw_text": "会議室利用料",
+     "text": "会議室利用料",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      191.11,
+      341.0,
+      202.23
+     ],
+     "raw_text": "6",
+     "text": "6",
+     "value": "6",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      191.11,
+      441.0,
+      202.23
+     ],
+     "raw_text": "44,438",
+     "text": "44,438",
+     "value": "44438",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 6,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      191.11,
+      541.0,
+      202.23
+     ],
+     "raw_text": "266,628",
+     "text": "266,628",
+     "value": "266628",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      205.11,
+      79.5,
+      216.23
+     ],
+     "raw_text": "値引き",
+     "text": "値引き",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      336.32,
+      205.11,
+      341.0,
+      216.23
+     ],
+     "raw_text": "7",
+     "text": "7",
+     "value": "7",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      415.47,
+      205.11,
+      441.0,
+      216.23
+     ],
+     "raw_text": "15,834",
+     "text": "15,834",
+     "value": "15834",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 7,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      505.67,
+      205.11,
+      541.0,
+      216.23
+     ],
+     "raw_text": "△110,838",
+     "text": "△110,838",
+     "value": "-110838",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      219.11,
+      114.36,
+      230.23
+     ],
+     "raw_text": "消費税（10％）",
+     "text": "消費税(10%)",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      285.0,
+      218.0,
+      345.0,
+      232.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      345.0,
+      218.0,
+      445.0,
+      232.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 8,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      510.79,
+      219.11,
+      541.0,
+      230.23
+     ],
+     "raw_text": "119,082",
+     "text": "119,082",
+     "value": "119082",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 0,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      54.0,
+      233.11,
+      88.0,
+      244.23
+     ],
+     "raw_text": "合計金額",
+     "text": "合計金額",
+     "value": null,
+     "value_type": "text",
+     "blank_kind": null,
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 1,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      285.0,
+      232.0,
+      345.0,
+      246.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 2,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      345.0,
+      232.0,
+      445.0,
+      246.0
+     ],
+     "raw_text": "",
+     "text": "",
+     "value": null,
+     "value_type": "blank",
+     "blank_kind": "empty",
+     "footnote_refs": []
+    },
+    {
+     "row": 9,
+     "col": 3,
+     "row_span": 1,
+     "col_span": 1,
+     "is_header": false,
+     "page": 1,
+     "bbox": [
+      503.98,
+      233.11,
+      541.0,
+      244.23
+     ],
+     "raw_text": "1,309,910",
+     "text": "1,309,910",
+     "value": "1309910",
+     "value_type": "number",
+     "blank_kind": null,
+     "footnote_refs": []
+    }
+   ],
+   "footnotes": [],
+   "confidence": 1.0,
+   "needs_review": false,
+   "issues": []
+  }
+ ]
+}
